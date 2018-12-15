@@ -6,10 +6,8 @@ Plug 'mboughaba/i3config.vim'
 Plug 'tpope/vim-vinegar'
 Plug 'tpope/vim-surround'
 Plug 'airblade/vim-gitgutter'
-
 Plug 'vim-airline/vim-airline'
 Plug 'morhetz/gruvbox'
-
 Plug '/usr/bin/fzf'
 Plug 'junegunn/fzf.vim'
 "      __                           _      __
@@ -63,7 +61,6 @@ set mouse=n
 set cursorline
 
 
-
 " Goyo plugin makes text more readable when writing prose:
 map <leader>f :Goyo \| set linebreak<CR>
 
@@ -105,7 +102,6 @@ autocmd BufRead,BufNewFile /tmp/neomutt* let g:goyo_width=80
 autocmd BufRead,BufNewFile /tmp/neomutt* :Goyo
 
 
-
 " When shortcut files are updated, renew bash and ranger configs with new material:
 autocmd BufWritePost ~/.bm* !shortcuts
 
@@ -113,15 +109,14 @@ autocmd BufWritePost ~/.bm* !shortcuts
 autocmd BufWritePost ~/.Xresources,~/.Xdefaults !xrdb %
 
 
-
 " Switch between the last two files
 nnoremap <Leader><Leader> <C-^>
+
 
 " -- Search --
 nnoremap <leader><space> :nohlsearch<CR>
 set ignorecase  " ignore case when searching
 set smartcase  " ignore case if search pattern is all lowercase, case-sensitive otherwise
-
 "set hlsearch  " highlight matches
 "set copyindent  " copy the previous indentation on autoindenting
 "set shiftround  " use multiple of shiftwidth when indenting with '<' and '>'
@@ -139,7 +134,6 @@ set shiftwidth=4
 autocmd BufRead,BufNewFile *js set shiftwidth=2
 
 
-
 set termguicolors
 colorscheme gruvbox
 set background=dark
@@ -151,12 +145,9 @@ set background=dark
 " \___/\_,_/|___/\_,_/___/\__/_/ /_/ .__/\__/
 "                                 /_/
 
-" --------------- Plugin Settings Stuff ---------------
-" **vim-javascript
 "object/json syntax
 hi def link jsObjectKey Label
 
-" **emmet-vim
 imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
 let g:user_emmet_settings = {
 \  'javascript.jsx' : {
@@ -164,12 +155,10 @@ let g:user_emmet_settings = {
 \  }
 \}
 
-" **vim-closetag
 let g:closetag_filetypes = 'html,js,javascript.jsx'
 " let g:closetag_emptyTags_caseSensitive = 1
 " let g:closetag_shortcut = '>'
 " let g:closetag_close_shortcut = '<leader>>'
-
 
 
 " -- Linting, Auto Fix, Complation --
@@ -223,18 +212,3 @@ inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
 
-
-
-
-
-
-
-
-
-nnoremap <silent> [oh :call gruvbox#hls_show()<CR>
-nnoremap <silent> ]oh :call gruvbox#hls_hide()<CR>
-nnoremap <silent> coh :call gruvbox#hls_toggle()<CR>
-
-nnoremap * :let @/ = ""<CR>:call gruvbox#hls_show()<CR>*
-nnoremap / :let @/ = ""<CR>:call gruvbox#hls_show()<CR>/
-nnoremap ? :let @/ = ""<CR>:call gruvbox#hls_show()<CR>?
