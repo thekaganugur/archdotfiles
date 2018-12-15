@@ -1,0 +1,15 @@
+#!/bin/sh
+
+# Gives a dmenu prompt to search Google.
+# Without input, will open Google.com.
+# Anything else, it search it.
+
+pgrep -x dmenu && exit
+
+choice=$(echo "🦆" | dmenu -i -p "Search in Google:") || exit 1
+
+if [ "$choice" = "🦆"  ]; then
+	$BROWSER "https://www.google.com"
+else
+	$BROWSER "https://www.google.com/search?q=$choice&t=ffab&atb=v1-1"
+fi
