@@ -19,4 +19,4 @@
 !! *.alpha: 230
 *.alpha: 255
 !! Set a default font and font size as below:
-*.font: Monospace-16;
+*.font: Monospace-14;

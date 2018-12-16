@@ -5,6 +5,7 @@ Plug 'junegunn/goyo.vim'
 Plug 'mboughaba/i3config.vim'
 Plug 'tpope/vim-vinegar'
 Plug 'tpope/vim-surround'
+Plug 'tpope/vim-markdown'
 Plug 'airblade/vim-gitgutter'
 Plug 'vim-airline/vim-airline'
 Plug 'morhetz/gruvbox'
@@ -100,6 +101,8 @@ au BufRead,BufNewFile *.md setlocal textwidth=80
 " Goyo's width will be the line limit in mutt.
 autocmd BufRead,BufNewFile /tmp/neomutt* let g:goyo_width=80
 autocmd BufRead,BufNewFile /tmp/neomutt* :Goyo
+autocmd BufRead,BufNewFile /tmp/calcurse*,~/.calcurse/notes/* let g:goyo_width=80
+autocmd BufRead,BufNewFile /tmp/calcurse*,~/.calcurse/notes/* :Goyo
 
 
 " When shortcut files are updated, renew bash and ranger configs with new material:
@@ -111,6 +114,32 @@ autocmd BufWritePost ~/.Xresources,~/.Xdefaults !xrdb %
 
 " Switch between the last two files
 nnoremap <Leader><Leader> <C-^>
+
+" -- Goyo --
+" Ensure :q to quit even when Goyo is active
+function! s:goyo_enter()
+  let b:quitting = 0
+  let b:quitting_bang = 0
+  autocmd QuitPre <buffer> let b:quitting = 1
+  cabbrev <buffer> q! let b:quitting_bang = 1 <bar> q!
+endfunction
+
+function! s:goyo_leave()
+  " Quit Vim if this is the only remaining buffer
+  if b:quitting && len(filter(range(1, bufnr('$')), 'buflisted(v:val)')) == 1
+    if b:quitting_bang
+      qa!
+    else
+      qa
+    endif
+  endif
+endfunction
+
+autocmd! User GoyoEnter call <SID>goyo_enter()
+autocmd! User GoyoLeave call <SID>goyo_leave()
+
+" On window resize, if goyo is active, do <c-w>= to resize the window
+autocmd VimResized * if exists('#goyo') | exe "normal \<c-w>=" | endif
 
 
 " -- Search --
@@ -166,6 +195,9 @@ let g:ale_fixers = {
 \   'javascript': ['prettier'],
 \   'javascript.jsx': ['prettier'],
 \}
+let g:ale_linter_aliases = {'jsx': ['css', 'javascript']}
+let g:ale_linters = {'jsx': ['stylelint', 'eslint']}
+
 let g:ale_fix_on_save = 1
 nmap <leader>d <Plug>(ale_fix)
 let g:ale_javascript_prettier_use_local_config = 1 " use .prettiercr
@@ -212,3 +244,6 @@ inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
 
+
+nnoremap <C-p> :Files<Cr>
+nnoremap <C-g> :Rg<Cr>

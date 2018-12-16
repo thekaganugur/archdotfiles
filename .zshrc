@@ -89,5 +89,4 @@ sudo -n loadkeys ~/.scripts/ttymaps.kmap 2>/dev/null
 
 
 source /home/kgnugur/.nvim/plugged/gruvbox/gruvbox_256palette.sh
-
 source  /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
