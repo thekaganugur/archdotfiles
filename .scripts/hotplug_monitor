@@ -5,11 +5,12 @@ export DISPLAY=:0
 export XAUTHORITY=/home/kgnugur/.Xauthority
 
 function connect(){
-  xrandr --output HDMI-2 --primary --auto  --left-of eDP-1
+  xrandr --output HDMI2 --primary --auto  --left-of eDP1
+  xrandr --auto
 }
 
 function disconnect(){
-  xrandr --output HDMI-2 --off 
+  xrandr --output HDMI2 --off
 }
 
-xrandr | grep "HDMI-2 connected" &> /dev/null && connect || disconnect
+xrandr | grep "HDMI2 connected" &> /dev/null && connect || disconnect

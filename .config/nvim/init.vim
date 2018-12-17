@@ -1,13 +1,17 @@
 let mapleader=","
 
 call plug#begin('~/.nvim/plugged')
-Plug 'junegunn/goyo.vim'
-Plug 'mboughaba/i3config.vim'
+Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-vinegar'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-markdown'
+Plug 'tpope/vim-commentary'
+Plug 'junegunn/goyo.vim'
+Plug 'mboughaba/i3config.vim'
 Plug 'airblade/vim-gitgutter'
-Plug 'vim-airline/vim-airline'
+Plug 'tpope/vim-fugitive'
+Plug 'itchyny/lightline.vim'
+Plug 'shinchu/lightline-gruvbox.vim'
 Plug 'morhetz/gruvbox'
 Plug '/usr/bin/fzf'
 Plug 'junegunn/fzf.vim'
@@ -33,13 +37,10 @@ Plug 'autozimu/LanguageClient-neovim', {
     \ 'branch': 'next',
     \ 'do': 'bash install.sh',
     \ }
-Plug 'roxma/nvim-yarp'
 Plug 'ncm2/ncm2'
+Plug 'roxma/nvim-yarp'
 Plug 'ncm2/ncm2-bufword'
-Plug 'ncm2/ncm2-tmux'
 Plug 'ncm2/ncm2-path'
-" Plug 'ncm2/nvim-typescript', {'do': './install.sh'}
-"  Plug 'Shougo/deoplete.nvim'
 call plug#end()
 
 
@@ -48,7 +49,7 @@ set nocompatible
 filetype plugin on
 syntax on
 set encoding=utf-8
-set number relativenumber
+set number
 " Enable autocompletion:
 set wildmenu
 " Disables automatic commenting on newline:
@@ -173,7 +174,6 @@ set background=dark
 " / // / _ `/ |/ / _ `(_-</ __/ __/ / _ \/ __/
 " \___/\_,_/|___/\_,_/___/\__/_/ /_/ .__/\__/
 "                                 /_/
-
 "object/json syntax
 hi def link jsObjectKey Label
 
@@ -184,10 +184,7 @@ let g:user_emmet_settings = {
 \  }
 \}
 
-let g:closetag_filetypes = 'html,js,javascript.jsx'
-" let g:closetag_emptyTags_caseSensitive = 1
-" let g:closetag_shortcut = '>'
-" let g:closetag_close_shortcut = '<leader>>'
+let g:closetag_filetypes = 'html,js,javascript,jsx'
 
 
 " -- Linting, Auto Fix, Complation --
@@ -197,7 +194,6 @@ let g:ale_fixers = {
 \}
 let g:ale_linter_aliases = {'jsx': ['css', 'javascript']}
 let g:ale_linters = {'jsx': ['stylelint', 'eslint']}
-
 let g:ale_fix_on_save = 1
 nmap <leader>d <Plug>(ale_fix)
 let g:ale_javascript_prettier_use_local_config = 1 " use .prettiercr
@@ -221,7 +217,7 @@ nnoremap <silent> gd :call LanguageClient#textDocument_definition()<CR>
 nnoremap <silent> <F2> :call LanguageClient#textDocument_rename()<CR>
 
 
-" enable ncm2 for all buffers
+
 autocmd BufEnter * call ncm2#enable_for_buffer()
 
 " IMPORTANTE: :help Ncm2PopupOpen for more information
@@ -245,5 +241,33 @@ inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
 
 
+command! -bang -nargs=* Find call fzf#vim#grep( 'rg --column --line-number --no-heading --fixed-strings --ignore-case --hidden --follow --color "always" '.shellescape(<q-args>), 1, <bang>0)
+
 nnoremap <C-p> :Files<Cr>
 nnoremap <C-g> :Rg<Cr>
+
+
+" If using Oni's externalized statusline, hide vim's native statusline,
+set noshowmode
+" set noruler
+" set laststatus=0
+set noshowcmd
+
+
+augroup CursorLine
+    au!
+    au VimEnter,WinEnter,BufWinEnter * setlocal cursorline
+    au WinLeave * setlocal nocursorline
+augroup END
+
+
+let g:lightline = {}
+let g:lightline.colorscheme = 'gruvbox'
+
+" Terminal settings
+au TermOpen * setlocal nonumber norelativenumber laststatus=0
+tnoremap <leader><ESC> <C-\><C-n>
+let g:neoterm_autoscroll = 1
+
+
+

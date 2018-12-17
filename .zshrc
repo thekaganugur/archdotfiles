@@ -69,6 +69,8 @@ alias g="git"
 alias n="npm"
 alias c="code"
 alias trem="transmission-remote"
+alias via=" pushd ~/Codes/via-app && v -S"
+alias svia=" pushd ~/Codes/via-app && v -S vimSessionStart"
 
 # Adding color
 alias ls='ls -hN --color=auto --group-directories-first'
