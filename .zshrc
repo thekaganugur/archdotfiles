@@ -61,21 +61,25 @@ source $ZSH/oh-my-zsh.sh
 alias e="$EDITOR"
 alias v="nvim"
 alias sv="sudo nvim"
-alias p="sudo pacman"
 alias r="ranger"
 alias sr="sudo ranger"
 alias ka="killall"
 alias g="git"
 alias n="npm"
 alias c="code"
-alias trem="transmission-remote"
-alias via=" pushd ~/Codes/via-app && v -S"
-alias svia=" pushd ~/Codes/via-app && v -S vimSessionStart"
+
+alias via="pushd ~/Codes/via-app && v -S"
+alias svia="pushd ~/Codes/via-app && v -S vimSessionStart"
+
+alias p="sudo pacman"
+alias pkglist="pacman -Qqe > .pkglist.txt"
 
 # Adding color
 alias ls='ls -hN --color=auto --group-directories-first'
 alias grep="grep --color=auto"
 alias diff="diff --color=auto"
+
+
 
 
 [ ! -f ~/.shortcuts ] && shortcuts >/dev/null 2>&1

@@ -11,8 +11,9 @@ Plug 'mboughaba/i3config.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 Plug 'itchyny/lightline.vim'
-Plug 'shinchu/lightline-gruvbox.vim'
+"Plug 'shinchu/lightline-gruvbox.vim'
 Plug 'morhetz/gruvbox'
+Plug 'rakr/vim-one'
 Plug '/usr/bin/fzf'
 Plug 'junegunn/fzf.vim'
 "      __                           _      __
@@ -100,9 +101,7 @@ au BufRead,BufNewFile *.md setlocal textwidth=80
 
 " Enable Goyo by default for mutt writting
 " Goyo's width will be the line limit in mutt.
-autocmd BufRead,BufNewFile /tmp/neomutt* let g:goyo_width=80
 autocmd BufRead,BufNewFile /tmp/neomutt* :Goyo
-autocmd BufRead,BufNewFile /tmp/calcurse*,~/.calcurse/notes/* let g:goyo_width=80
 autocmd BufRead,BufNewFile /tmp/calcurse*,~/.calcurse/notes/* :Goyo
 
 
@@ -139,9 +138,6 @@ endfunction
 autocmd! User GoyoEnter call <SID>goyo_enter()
 autocmd! User GoyoLeave call <SID>goyo_leave()
 
-" On window resize, if goyo is active, do <c-w>= to resize the window
-autocmd VimResized * if exists('#goyo') | exe "normal \<c-w>=" | endif
-
 
 " -- Search --
 nnoremap <leader><space> :nohlsearch<CR>
@@ -158,15 +154,22 @@ set expandtab  " tabs are spaces
 set autoindent
 set smarttab
 set softtabstop=4
-" For .js files I use 2 spaces.
 autocmd BufRead,BufNewFile *js set softtabstop=2
 set shiftwidth=4
 autocmd BufRead,BufNewFile *js set shiftwidth=2
 
 
 set termguicolors
-colorscheme gruvbox
-set background=dark
+"set background=light
+"let g:gruvbox_contrast_light=1
+"let g:gruvbox_italic=1
+"let g:gruvbox_improved_strings=1
+"let g:gruvbox_improved_warnings=1
+"colorscheme gruvbox
+set background=light        " for the light version
+let g:one_allow_italics = 1 " I love italic for comments
+colorscheme one
+
 
 
 "      __                           _      __
@@ -240,9 +243,8 @@ inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
 
-
+" -- Fzf Rg --
 command! -bang -nargs=* Find call fzf#vim#grep( 'rg --column --line-number --no-heading --fixed-strings --ignore-case --hidden --follow --color "always" '.shellescape(<q-args>), 1, <bang>0)
-
 nnoremap <C-p> :Files<Cr>
 nnoremap <C-g> :Rg<Cr>
 
@@ -261,13 +263,16 @@ augroup CursorLine
 augroup END
 
 
-let g:lightline = {}
-let g:lightline.colorscheme = 'gruvbox'
+"let g:lightline = {}
+"let g:lightline.colorscheme = 'gruvbox'
+let g:lightline = {
+      \ 'colorscheme': 'one',
+      \ }
+
+
 
 " Terminal settings
-au TermOpen * setlocal nonumber norelativenumber laststatus=0
+au TermOpen * setlocal nonumber laststatus=0
 tnoremap <leader><ESC> <C-\><C-n>
 let g:neoterm_autoscroll = 1
-
-
 

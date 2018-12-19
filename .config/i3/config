@@ -96,6 +96,7 @@ bar {
 # #---Basic Bindings---# #
 bindsym $mod+Return exec $term
 bindsym $mod+Shift+Return	exec --no-startup-id samedir
+bindsym $mod+Mod1+Return	exec alacritty
 
 bindsym $mod+Shift+space 	floating toggle
 bindsym $mod+space		focus mode_toggle
@@ -325,3 +326,7 @@ bindsym XF86AudioPlay exec playerctl play
 bindsym XF86AudioPause exec playerctl pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
+
+
+new_window pixel
+
