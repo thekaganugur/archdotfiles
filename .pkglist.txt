@@ -89,7 +89,6 @@ pacman
 pandoc
 patch
 pciutils
-pcmanfm
 perl
 pkgconf
 procps-ng
