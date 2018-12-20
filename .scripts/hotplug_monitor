@@ -7,10 +7,24 @@ export XAUTHORITY=/home/kgnugur/.Xauthority
 function connect(){
   xrandr --output HDMI2 --primary --auto  --left-of eDP1
   xrandr --auto
+  # Fix feh background if screen size/arangement has changed.
+  feh --bg-scale "$HOME/.config/wall.jpg"
+  # Restart dunst to ensure proper location on screen
+  pgrep -x dunst >/dev/null && killall dunst && setsid dunst &
+  # Re-remap keys if keyboard added (for laptop bases)(I dont know if this is
+  # needed)
+  remaps
 }
 
 function disconnect(){
   xrandr --output HDMI2 --off
+  # Fix feh background if screen size/arangement has changed.
+  feh --bg-scale "$HOME/.config/wall.jpg"
+  # Restart dunst to ensure proper location on screen
+  pgrep -x dunst >/dev/null && killall dunst && setsid dunst &
+  # Re-remap keys if keyboard added (for laptop bases)(I dont know if this is
+  # needed)
+  remaps
 }
 
 xrandr | grep "HDMI2 connected" &> /dev/null && connect || disconnect

@@ -1,4 +1,4 @@
-# vim:filetype=i3config
+# nvim:filetype=i3config
 # #---Basic Definitions---# #
 # Needed for i3-gaps
 for_window [class="^.*"] border pixel 3
@@ -6,14 +6,13 @@ gaps inner 10
 gaps outer 5
 set $term --no-startup-id $TERMINAL
 set $mod Mod4
-set $stoprec --no-startup-id dmenurecord kill
 set $shutdown sudo -A shutdown -h now
 set $reboot sudo -A reboot
 set $netrefresh --no-startup-id sudo -A systemctl restart NetworkManager
 set $hibernate sudo -A systemctl suspend
+set $stoprec --no-startup-id dmenurecord kill
 
 # #---Dropdown Windows---# #
-
 # First I have a tmux window used for background scripts.
 # I'll later bind this to mod+u.
 for_window [instance="tmuxdd"] floating enable
@@ -107,11 +106,11 @@ bindsym $mod+Shift+Escape 	exec --no-startup-id prompt "Exit i3?" "i3-msg exit"
 # bindsym $mod+BackSpace
 bindsym $mod+Shift+BackSpace	exec --no-startup-id prompt "Reboot computer?" "$reboot"
 
-#bindsym $mod+grave		exec --no-startup-id dmenuunicode
+bindsym $mod+quotedbl	exec --no-startup-id dmenuunicode
 #bindsym $mod+asciitilde
 
 # Show selection:
-# bindsym $mod+Shift+Insert	exec --no-startup-id showclip
+bindsym $mod+Shift+Insert	exec --no-startup-id showclip
 # bindsym $mod+Pause		exec --no-startup-id xcqr
 
 
@@ -120,10 +119,10 @@ bindsym $mod+q			[con_id="__focused__" instance="^(?!dropdowncalc|tmuxdd).*$"] k
 bindsym $mod+Shift+q		[con_id="__focused__" instance="^(?!dropdowncalc|tmuxdd).*$"] kill
 
 
-bindsym $mod+w		exec --no-startup-id $BROWSER; exec notify-send -i Chrome "Opening Chrome" -t 1000
-bindsym $mod+Shift+w			exec $term -e nmtui
+bindsym $mod+w  		exec --no-startup-id $BROWSER; exec notify-send -i Chrome "Opening Chrome" -t 1000
+bindsym $mod+Shift+w		exec $term -e nmtui
 
-# bindsym $mod+e			exec $term -e neomutt
+# bindsym $mod+e		exec $term -e neomutt
 # bindsym $mod+Shift+e		exec --no-startup-id tutorialvids
 
 bindsym $mod+r 			exec $term -e ranger
@@ -144,7 +143,7 @@ bindsym $mod+Shift+I		exec --no-startup-id i3resize up
 bindsym $mod+o			sticky toggle
 bindsym $mod+Shift+o		exec --no-startup-id i3resize right
 
-# bindsym $mod+p			exec --no-startup-id lmc toggle
+# bindsym $mod+p		exec --no-startup-id lmc toggle
 # bindsym $mod+Shift+p		exec --no-startup-id lmc pause
 
 bindsym $mod+a			exec --no-startup-id ddspawn dropdowncalc -f mono:pixelsize=24
@@ -194,7 +193,7 @@ bindsym $mod+Shift+c		exec --no-startup-id code_samedir
 bindsym $mod+b			bar mode toggle
 bindsym $mod+Shift+b		floating toggle; sticky toggle; exec --no-startup-id bottomleft
 
-# bindsym $mod+n			exec $term -e newspod
+# bindsym $mod+n		exec $term -e newspod
 ##bindsym $mod+Shift+n
 
 bindsym $mod+m exec --no-startup-id i3spotify
@@ -322,11 +321,12 @@ bindsym XF86AudioMute exec amixer -q -D pulse sset Master toggle && pkill -RTMIN
 bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
 
-bindsym XF86AudioPlay exec playerctl play
-bindsym XF86AudioPause exec playerctl pause
+bindsym XF86AudioPlay exec playerctl play-pause
+# I guess spotify doest support stop: pause + go to second 0
+bindsym XF86AudioStop exec playerctl stop
+# bindsym XF86AudioPause exec playerctl pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 
 new_window pixel
-
