@@ -276,3 +276,7 @@ au TermOpen * setlocal nonumber laststatus=0
 tnoremap <leader><ESC> <C-\><C-n>
 let g:neoterm_autoscroll = 1
 
+
+
+" Tree style for netrw or vinegar
+let g:netrw_liststyle = 3
