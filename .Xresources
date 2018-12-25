@@ -1,4 +1,4 @@
-*.color0: #1d2021
+*.color0: #32302f
 *.color1: #cc241d
 *.color2: #98971a
 *.color3: #d79921
@@ -20,4 +20,4 @@
 !! *.alpha: 230
 *.alpha: 255
 !! Set a default font and font size as below:
-*.font: Monospace-14;
+*.font: Monospace-15;

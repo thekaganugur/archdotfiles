@@ -1,9 +1,9 @@
-# nvim:filetype=i3config
+# vim:filetype=i3config
 # #---Basic Definitions---# #
 # Needed for i3-gaps
-for_window [class="^.*"] border pixel 3
-gaps inner 10
-gaps outer 5
+for_window [class="^.*"] border pixel 2
+gaps inner 6
+gaps outer 3
 set $term --no-startup-id $TERMINAL
 set $mod Mod4
 set $shutdown sudo -A shutdown -h now
@@ -75,7 +75,7 @@ client.urgent		$darkred	$darkred	$black		$darkred		$darkred
 client.background $black
 
 bar {
-    font pango:FontAwesome 12
+    font pango:FontAwesome 10
     position top
     status_command i3blocks
     mode dock
@@ -129,7 +129,7 @@ bindsym $mod+r 			exec $term -e ranger
 bindsym $mod+Shift+r		exec $term -e sudo ranger /
 
 bindsym $mod+t			split toggle
-bindsym $mod+Shift+t		gaps inner current set 10; gaps outer current set 5
+bindsym $mod+Shift+t		gaps inner current set 6; gaps outer current set 3
 
  bindsym $mod+y			exec $term -e calcurse
 bindsym $mod+Shift+y		exec --no-startup-id i3resize left
@@ -233,16 +233,16 @@ set $ws9 "9"
 set $ws10 "10"
 
 # assign workspaces to screens
-workspace 1 output HDMI2
-workspace 2 output HDMI2
-workspace 3 output HDMI2
-workspace 4 output HDMI2
-workspace 5 output HDMI2
-workspace 6 output eDP1
-workspace 7 output eDP1
-workspace 8 output eDP1
-workspace 9 output eDP1
-workspace 10 output eDP1
+workspace 1 output HDMI-2
+workspace 2 output HDMI-2
+workspace 3 output HDMI-2
+workspace 4 output HDMI-2
+workspace 5 output HDMI-2
+workspace 6 output eDP-1
+workspace 7 output eDP-1
+workspace 8 output eDP-1
+workspace 9 output eDP-1
+workspace 10 output eD-P1
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1

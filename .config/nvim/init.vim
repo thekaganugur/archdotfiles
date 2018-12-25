@@ -11,9 +11,9 @@ Plug 'mboughaba/i3config.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 Plug 'itchyny/lightline.vim'
-"Plug 'shinchu/lightline-gruvbox.vim'
+Plug 'shinchu/lightline-gruvbox.vim'
 Plug 'morhetz/gruvbox'
-Plug 'rakr/vim-one'
+"Plug 'rakr/vim-one'
 Plug '/usr/bin/fzf'
 Plug 'junegunn/fzf.vim'
 "      __                           _      __
@@ -160,15 +160,12 @@ autocmd BufRead,BufNewFile *js set shiftwidth=2
 
 
 set termguicolors
-"set background=light
-"let g:gruvbox_contrast_light=1
-"let g:gruvbox_italic=1
-"let g:gruvbox_improved_strings=1
-"let g:gruvbox_improved_warnings=1
-"colorscheme gruvbox
-set background=light        " for the light version
-let g:one_allow_italics = 1 " I love italic for comments
-colorscheme one
+let g:gruvbox_contrast_light=1
+let g:gruvbox_italic=1
+colorscheme gruvbox
+"let g:one_allow_italics = 1 " I love italic for comments
+"colorscheme one
+set background=dark
 
 
 
@@ -263,11 +260,11 @@ augroup CursorLine
 augroup END
 
 
-"let g:lightline = {}
-"let g:lightline.colorscheme = 'gruvbox'
-let g:lightline = {
-      \ 'colorscheme': 'one',
-      \ }
+let g:lightline = {}
+let g:lightline.colorscheme = 'gruvbox'
+" let g:lightline = {
+      " \ 'colorscheme': 'one',
+      " \ }
 
 
 
@@ -280,3 +277,15 @@ let g:neoterm_autoscroll = 1
 
 " Tree style for netrw or vinegar
 let g:netrw_liststyle = 3
+
+
+" set st cursor and background to contrasting colors on start
+	silent !echo -ne "\033]4;258;\#3c3836\x7\033]4;256;\#fbf1c7\x7"
+	" reset cursor and background  when vim exits
+	autocmd VimLeave * silent !echo -ne "\033]104;258\x7\033]104;256\x7"
+
+	" You can also change colors depending on Vim mode:
+	" use an orange cursor in insert mode
+	let &t_SI = "\033]4;258;orange\x7"
+	" use red cursor otherwise
+	let &t_EI = "\033]4;258;red\x7"

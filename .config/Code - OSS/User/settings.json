@@ -1,0 +1,19 @@
+{
+    //editor
+    "editor.fontSize": 16,
+    "editor.fontFamily": "monospace",
+    "editor.mouseWheelZoom": true,
+    "editor.minimap.enabled": false,
+    "files.autoSave": "onFocusChange",
+    //workbench
+    "workbench.activityBar.visible": false,
+    "workbench.colorTheme": "Gruvbox Dark (Soft)",
+    "workbench.iconTheme": "vscode-great-icons",
+    //window
+    "window.zoomLevel": 0.5,
+    "window.menuBarVisibility": "toggle",
+    "window.titleBarStyle": "native",
+    //** Plugins **//
+    //vim
+    "vim.foldfix": true,
+}
