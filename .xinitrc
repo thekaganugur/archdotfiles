@@ -8,4 +8,6 @@ xrandr --output HDMI-2 --primary --left-of eDP-1
 
 [ -f ~/.Xresources ] && xrdb -merge ~/.Xresources
 
+sudo chmod a+w /sys/class/backlight/intel_backlight/brightness
+
 exec i3
