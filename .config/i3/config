@@ -75,7 +75,7 @@ client.urgent		$darkred	$darkred	$black		$darkred		$darkred
 client.background $black
 
 bar {
-    font pango:FontAwesome 10
+    font pango:FontAwesome 11
     position top
     status_command i3blocks
     mode dock
@@ -108,6 +108,10 @@ bindsym $mod+Shift+BackSpace	exec --no-startup-id prompt "Reboot computer?" "$re
 
 bindsym $mod+quotedbl	exec --no-startup-id dmenuunicode
 #bindsym $mod+asciitilde
+
+
+#STOP/HIDE EVERYTHING:
+bindsym $mod+Shift+Delete	exec --no-startup-id lmc truemute ; exec --no-startup-id lmc pause ; exec --no-startup-id pauseallmpv; workspace 0; exec $term -e htop ; exec $term -e ranger
 
 # Show selection:
 bindsym $mod+Shift+Insert	exec --no-startup-id showclip
@@ -152,7 +156,8 @@ bindsym $mod+Shift+a		exec $term -e pulsemixer
 bindsym $mod+s			gaps inner current plus 5
 bindsym $mod+Shift+s		gaps inner current minus 5
 
-bindsym $mod+d			exec --no-startup-id dmenu_run
+# bindsym $mod+d			exec --no-startup-id dmenu_run
+bindsym $mod+d exec dmenu_run -fn 'Monospace-14' -nb '#32302f' -nf '#ebdbb2' -sb '#458588' -sf '#ebdbb2'
 bindsym $mod+Shift+d		gaps inner current set 0; gaps outer current set 0
 
 set $freeze Distraction-free mode (super+shift+f to reactivate bindings)

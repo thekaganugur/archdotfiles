@@ -13,7 +13,6 @@ Plug 'tpope/vim-fugitive'
 Plug 'itchyny/lightline.vim'
 Plug 'shinchu/lightline-gruvbox.vim'
 Plug 'morhetz/gruvbox'
-"Plug 'rakr/vim-one'
 Plug '/usr/bin/fzf'
 Plug 'junegunn/fzf.vim'
 "      __                           _      __
@@ -163,10 +162,7 @@ set termguicolors
 let g:gruvbox_contrast_light=1
 let g:gruvbox_italic=1
 colorscheme gruvbox
-"let g:one_allow_italics = 1 " I love italic for comments
-"colorscheme one
 set background=dark
-
 
 
 "      __                           _      __
