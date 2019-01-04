@@ -6,3 +6,6 @@ application/pdf=zathura.desktop;
 image/png=feh.desktop;
 image/jpeg=feh.desktop;
 image/gif=gif.desktop;
+
+[Added Associations]
+application/x-partial-download=mpv.desktop;

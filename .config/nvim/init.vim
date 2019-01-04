@@ -5,7 +5,8 @@ Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-vinegar'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-markdown'
-Plug 'tpope/vim-commentary'
+" Plug 'tpope/vim-commentary'
+Plug 'tomtom/tcomment_vim'
 Plug 'junegunn/goyo.vim'
 Plug 'mboughaba/i3config.vim'
 Plug 'airblade/vim-gitgutter'
@@ -25,8 +26,8 @@ Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 Plug '/hail2u/vim-css3-syntax'
-Plug 'ap/vim-css-color'
 " -- Nice Stuff --
+Plug 'ap/vim-css-color'
 Plug 'mattn/emmet-vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'alvan/vim-closetag'
@@ -162,7 +163,7 @@ set termguicolors
 let g:gruvbox_contrast_light=1
 let g:gruvbox_italic=1
 colorscheme gruvbox
-set background=dark
+set background=light
 
 
 "      __                           _      __
@@ -285,3 +286,10 @@ let g:netrw_liststyle = 3
 	let &t_SI = "\033]4;258;orange\x7"
 	" use red cursor otherwise
 	let &t_EI = "\033]4;258;red\x7"
+
+
+
+
+            augroup pandoc_syntax
+        au! BufNewFile,BufFilePre,BufRead *.md set filetype=markdown.pandoc
+    augroup END
