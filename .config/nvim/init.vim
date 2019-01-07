@@ -163,7 +163,7 @@ set termguicolors
 let g:gruvbox_contrast_light=1
 let g:gruvbox_italic=1
 colorscheme gruvbox
-set background=light
+" set background=light
 
 
 "      __                           _      __
