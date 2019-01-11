@@ -5,7 +5,6 @@ Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-vinegar'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-markdown'
-" Plug 'tpope/vim-commentary'
 Plug 'tomtom/tcomment_vim'
 Plug 'junegunn/goyo.vim'
 Plug 'mboughaba/i3config.vim'
@@ -259,10 +258,6 @@ augroup END
 
 let g:lightline = {}
 let g:lightline.colorscheme = 'gruvbox'
-" let g:lightline = {
-      " \ 'colorscheme': 'one',
-      " \ }
-
 
 
 " Terminal settings
@@ -275,21 +270,3 @@ let g:neoterm_autoscroll = 1
 " Tree style for netrw or vinegar
 let g:netrw_liststyle = 3
 
-
-" set st cursor and background to contrasting colors on start
-	silent !echo -ne "\033]4;258;\#3c3836\x7\033]4;256;\#fbf1c7\x7"
-	" reset cursor and background  when vim exits
-	autocmd VimLeave * silent !echo -ne "\033]104;258\x7\033]104;256\x7"
-
-	" You can also change colors depending on Vim mode:
-	" use an orange cursor in insert mode
-	let &t_SI = "\033]4;258;orange\x7"
-	" use red cursor otherwise
-	let &t_EI = "\033]4;258;red\x7"
-
-
-
-
-            augroup pandoc_syntax
-        au! BufNewFile,BufFilePre,BufRead *.md set filetype=markdown.pandoc
-    augroup END
