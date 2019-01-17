@@ -31,7 +31,7 @@ for_window [instance="dropdowncalc"] sticky enable
 
 # #---Starting External Scripts---# #
 # exec --no-startup-id hotplug_monitor
-exec --no-startup-id redshift - 39.979205:32.614248
+exec --no-startup-id redshift -l 39.979205:32.614248
 #exec --no-startup-id nm-applet
 exec --no-startup-id udiskie
 # Setting the background and colorscheme:
@@ -190,6 +190,7 @@ bindsym $mod+Shift+b		floating toggle; sticky toggle; exec --no-startup-id botto
 bindsym $mod+m exec --no-startup-id i3spotify
 # bindsym $mod+Shift+m
 
+bindsym $mod+p exec --no-startup-id pcmanfm
 
 # #---Workspace Bindings---# #
 bindsym $mod+Home		workspace $ws1
@@ -315,4 +316,3 @@ bindsym XF86AudioPlay exec playerctl play-pause
 bindsym XF86AudioStop exec playerctl stop
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
-

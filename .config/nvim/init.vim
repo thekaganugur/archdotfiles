@@ -242,11 +242,6 @@ nnoremap <C-p> :Files<Cr>
 nnoremap <C-g> :Rg<Cr>
 
 
-" If using Oni's externalized statusline, hide vim's native statusline,
-set noshowmode
-" set noruler
-" set laststatus=0
-set noshowcmd
 
 
 augroup CursorLine
