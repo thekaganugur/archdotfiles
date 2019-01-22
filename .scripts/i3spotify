@@ -1,5 +1,0 @@
-#! /usr/bin/bash
-
-notify-send -i Spotify "Opening Spotify" -t 1500
-i3 focus output eDP-1
-com.spotify.Client

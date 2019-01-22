@@ -187,7 +187,7 @@ bindsym $mod+Shift+b		floating toggle; sticky toggle; exec --no-startup-id botto
 # bindsym $mod+n
 ##bindsym $mod+Shift+n
 
-bindsym $mod+m exec --no-startup-id i3spotify
+bindsym $mod+m exec --no-startup-id  com.spotify.Client; exec notify-send -i Spotify "Opening Spotify in WS-10" -t 1000
 # bindsym $mod+Shift+m
 
 bindsym $mod+p exec --no-startup-id pcmanfm
@@ -202,15 +202,6 @@ bindsym $mod+Shift+Prior	move container to workspace prev
 bindsym $mod+Next		workspace next
 bindsym $mod+Shift+Next		move container to workspace next
 bindsym $mod+Tab		workspace back_and_forth
-# indsym $mod+XF86Back		workspace prev
-# indsym $mod+Shift+XF86Back	move container to workspace prev
-# indsym $mod+XF86Forward	workspace next
-# indsym $mod+Shift+XF86Forward	move container to workspace next
-# indsym $mod+semicolon		workspace next
-# indsym $mod+apostrophe		split horizontal ;; exec $term
-# indsym $mod+slash		split vertical ;; exec $term
-# indsym $mod+Shift+slash	kill
-# indsym $mod+backslash		workspace back_and_forth
 
 # Define names for default workspaces
 set $ws1 "1"

@@ -3,7 +3,9 @@ acpilight
 adwaita-dark
 alacritty
 alsa-utils
+arandr
 asciiquarium
+atool
 autoconf
 automake
 bash
@@ -31,6 +33,7 @@ file
 filesystem
 findutils
 firefox
+fish
 flatpak
 flex
 fzf
@@ -87,6 +90,7 @@ nodejs
 noto-fonts-emoji
 npm
 ntfs-3g
+nvidia
 nvidia-settings
 otf-font-awesome
 p7zip
