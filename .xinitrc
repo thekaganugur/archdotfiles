@@ -11,3 +11,4 @@ xrandr --output HDMI-2 --primary --left-of eDP-1
 sudo chmod a+w /sys/class/backlight/intel_backlight/brightness
 
 exec i3
+#exec qtile

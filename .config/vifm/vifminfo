@@ -1,0 +1,113 @@
+# You can edit this file by hand, but it's recommended not to do that.
+
+# Marks:
+'H
+	/home/kgnugur/
+	..
+1548169310
+'b
+	/home/kgnugur/bin/
+	..
+1548169310
+'h
+	/home/kgnugur/
+	..
+1548169310
+'z
+	/home/kgnugur/.config/vifm
+	..
+1548169310
+
+# Bookmarks:
+
+# TUI:
+al
+q0
+v2
+ov
+m-1
+l2
+r2
+
+# Left window history (oldest to newest):
+d/home/kgnugur
+	Codes
+1
+d/home/kgnugur/Codes
+	via-app
+3
+d/home/kgnugur/Codes/via-app
+	..
+0
+d/home/kgnugur/Codes
+	via-app
+3
+d/home/kgnugur
+	Codes
+1
+d/home/kgnugur/Codes
+	via-app
+3
+d/home/kgnugur/Codes/via-app
+	..
+0
+d/home/kgnugur
+	..
+0
+d/home
+	kgnugur
+1
+d/home/kgnugur
+	Documents
+2
+d/home/kgnugur/Documents
+	..
+0
+d/home/kgnugur
+	Documents
+2
+d/home/kgnugur/Documents
+	..
+0
+d/home/kgnugur
+	Documents
+2
+
+# Right window history (oldest to newest):
+D/home/kgnugur
+	..
+0
+
+# Command line history (oldest to newest):
+:q
+
+# Search history (oldest to newest):
+
+# Prompt history (oldest to newest):
+
+# Local filter history (oldest to newest):
+
+# Registers:
+
+# Directory stack (oldest to newest):
+
+# Trash content:
+t/home/kgnugur/.local/share/vifm/Trash/000_fish
+	/home/kgnugur/.config/fish
+t/home/kgnugur/.local/share/vifm/Trash/000_todo-ricing
+	/home/kgnugur/Documents/Resume/todo-ricing
+t/home/kgnugur/.local/share/vifm/Trash/000_Blog-Ideas
+	/home/kgnugur/Documents/Resume/Blog-Ideas
+t/home/kgnugur/.local/share/vifm/Trash/000_.lesshst
+	/home/kgnugur/Documents/.lesshst
+
+# State:
+f
+i1
+[.1
+[F
+F
+I1
+].1
+]F
+s0

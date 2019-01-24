@@ -47,7 +47,7 @@
 
 # Standard plugins can be found in ~/.oh-my-zsh/plugins/*
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-plugins=(colored-man-pages)
+plugins=(git colored-man-pages)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -59,6 +59,7 @@ source $ZSH/oh-my-zsh.sh
 # export ARCHFLAGS="-arch x86_64"
 
 alias e="$EDITOR"
+alias vim="nvim"
 alias v="nvim"
 alias sv="sudo nvim"
 alias r="ranger"

@@ -164,6 +164,9 @@ let g:gruvbox_italic=1
 colorscheme gruvbox
 set background=light
 
+let g:lightline = {}
+let g:lightline.colorscheme = 'gruvbox'
+
 
 "      __                           _      __
 "  __ / /__ __  _____ ____ ________(_)__  / /_
@@ -251,15 +254,12 @@ augroup CursorLine
 augroup END
 
 
-let g:lightline = {}
-let g:lightline.colorscheme = 'gruvbox'
 
 
 " Terminal settings
 au TermOpen * setlocal nonumber laststatus=0
 tnoremap <leader><ESC> <C-\><C-n>
 let g:neoterm_autoscroll = 1
-
 
 
 " Tree style for netrw or vinegar

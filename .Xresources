@@ -15,34 +15,24 @@
 *.color14: #8ec07c
 *.color15: #ebdbb2
 
-
-! soft contrast: *background: #f2e5bc
-! Black + DarkGrey
-! st.color0:  #fdf4c1
+! normal contrast st.color0:  #fdf4c1
+! soft contrast: #f2e5bc
 st.color0:  #f2e5bc
-st.color8:  #928374
-! DarkRed + Red
 st.color1:  #cc241d
-st.color9:  #9d0006
-! DarkGreen + Green
 st.color2:  #98971a
-st.color10: #79740e
-! DarkYellow + Yellow
 st.color3:  #d79921
-st.color11: #b57614
-! DarkBlue + Blue
 st.color4:  #458588
-st.color12: #076678
-! DarkMagenta + Magenta
 st.color5:  #b16286
-st.color13: #8f3f71
-! DarkCyan + Cyan
 st.color6:  #689d6a
-st.color14: #427b58
-! LightGrey + White
 st.color7:  #7c6f64
+st.color8:  #928374
+st.color9:  #9d0006
+st.color10: #79740e
+st.color11: #b57614
+st.color12: #076678
+st.color13: #8f3f71
+st.color14: #427b58
 st.color15: #3c3836
-
 
 
 !! Transparency (0-255):
