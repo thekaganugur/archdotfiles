@@ -11,10 +11,11 @@ Plug 'mboughaba/i3config.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 Plug 'itchyny/lightline.vim'
-Plug 'shinchu/lightline-gruvbox.vim'
-Plug 'morhetz/gruvbox'
+"Plug 'shinchu/lightline-gruvbox.vim'
+"Plug 'morhetz/gruvbox'
 Plug '/usr/bin/fzf'
 Plug 'junegunn/fzf.vim'
+Plug 'altercation/vim-colors-solarized'
 "      __                           _      __
 "  __ / /__ __  _____ ____ ________(_)__  / /_
 " / // / _ `/ |/ / _ `(_-</ __/ __/ / _ \/ __/
@@ -158,14 +159,26 @@ set shiftwidth=4
 autocmd BufRead,BufNewFile *js set shiftwidth=2
 
 
-set termguicolors
-let g:gruvbox_contrast_light=1
-let g:gruvbox_italic=1
-colorscheme gruvbox
-set background=light
+" set termguicolors
+" let g:gruvbox_contrast_light=1
+" let g:gruvbox_italic=1
+" colorscheme gruvbox
+" set background=light
+"
+" let g:lightline = {}
+" let g:lightline.colorscheme = 'gruvbox'
 
-let g:lightline = {}
-let g:lightline.colorscheme = 'gruvbox'
+
+syntax enable
+set background=dark
+colorscheme solarized
+call togglebg#map("<F6>")
+
+let g:lightline = {
+      \ 'colorscheme': 'solarized',
+      \ }
+
+set noshowmode
 
 
 "      __                           _      __
@@ -265,3 +278,16 @@ let g:neoterm_autoscroll = 1
 " Tree style for netrw or vinegar
 let g:netrw_liststyle = 3
 
+
+" define function to toggle solarized theme
+" change background and update lightline color scheme
+function! ToggleSolarizedTheme()
+  let &background = ( &background == "dark"? "light" : "dark" )
+  if exists("g:lightline")
+    runtime autoload/lightline/colorscheme/solarized.vim
+    call lightline#colorscheme()
+  endif
+endfunction
+
+" map F12 to ToggleSolarizedTheme() function
+map <F12> :call ToggleSolarizedTheme()<CR>

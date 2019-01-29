@@ -59,11 +59,12 @@ source $ZSH/oh-my-zsh.sh
 # export ARCHFLAGS="-arch x86_64"
 
 alias e="$EDITOR"
-alias vim="nvim"
 alias v="nvim"
 alias sv="sudo nvim"
 alias r="ranger"
 alias sr="sudo ranger"
+alias vf="vifm"
+alias svf="sudo vifm"
 alias ka="killall"
 alias g="git"
 alias n="npm"
@@ -89,9 +90,9 @@ alias envim="nvim ~/.config/nvim/init.vim"
 
 [ ! -f ~/.shortcuts ] && shortcuts >/dev/null 2>&1
 
-# Start graphical server if i3 not already running.
+# Start graphical server if tty1
 if [ "$(tty)" = "/dev/tty1" ]; then
-	pgrep -x i3 || exec startx
+    exec startx
 fi
 
 # Switch escape and caps and use wal colors if tty:

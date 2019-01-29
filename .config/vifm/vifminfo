@@ -13,10 +13,6 @@
 	/home/kgnugur/
 	..
 1548169310
-'z
-	/home/kgnugur/.config/vifm
-	..
-1548169310
 
 # Bookmarks:
 
@@ -30,25 +26,19 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/kgnugur
-	Codes
-1
-d/home/kgnugur/Codes
-	via-app
-3
-d/home/kgnugur/Codes/via-app
+d/home/kgnugur/suckless
+	st-0.8.1
+2
+d/home/kgnugur/suckless/st-0.8.1
 	..
 0
-d/home/kgnugur/Codes
-	via-app
-3
+d/home/kgnugur/suckless
+	..
+0
 d/home/kgnugur
-	Codes
-1
-d/home/kgnugur/Codes
-	via-app
-3
-d/home/kgnugur/Codes/via-app
+	suckless
+5
+d/home/kgnugur/suckless
 	..
 0
 d/home/kgnugur
@@ -58,9 +48,144 @@ d/home
 	kgnugur
 1
 d/home/kgnugur
-	Documents
+	newimp
+4
+d/home/kgnugur/newimp
+	suckless
+1
+d/home/kgnugur/newimp/suckless
+	..
+0
+d/home/kgnugur/newimp
+	..
+0
+d/home/kgnugur
+	suckless
+5
+d/home/kgnugur/suckless
+	dwm-6.1
+1
+d/home/kgnugur/suckless/dwm-6.1
+	..
+0
+d/home/kgnugur/suckless
+	..
+0
+d/home/kgnugur
+	newimp
+4
+d/home/kgnugur/newimp
+	suckless
+1
+d/home/kgnugur/newimp/suckless
+	..
+0
+d/home/kgnugur/newimp
+	..
+0
+d/home/kgnugur
+	suckless
+5
+d/home/kgnugur/suckless
+	..
+0
+d/home/kgnugur
+	newimp
+4
+d/home/kgnugur/newimp
+	..
+0
+d/home/kgnugur
+	suckless
+5
+d/home/kgnugur/suckless
+	dwm-6.1
+1
+d/home/kgnugur/suckless/dwm-6.1
+	..
+0
+d/home/kgnugur/suckless
+	..
+0
+d/home/kgnugur
+	newimp
+4
+d/home/kgnugur/newimp
+	..
+0
+d/home/kgnugur
+	suckless
+5
+d/home/kgnugur/suckless
+	st-0.8.1
 2
-d/home/kgnugur/Documents
+d/home/kgnugur/suckless/st-0.8.1
+	st-no_bold_colors-0.8.1.diff
+12
+d/home/kgnugur/suckless
+	st-0.8.1
+2
+d/home/kgnugur/suckless/st-0.8.1
+	st-scrollback-20181224-096b125.diff
+16
+d/home/kgnugur
+	Downloads
+3
+d/home/kgnugur/Downloads
+	..
+0
+d/home/kgnugur
+	newimp
+4
+d/home/kgnugur/newimp
+	..
+0
+d/home/kgnugur
+	st
+5
+d/home/kgnugur/st
+	st-no_bold_colors-0.8.1.diff
+7
+d/home/kgnugur
+	Downloads
+3
+d/home/kgnugur/Downloads
+	suckless
+2
+d/home/kgnugur/Downloads/suckless
+	dwm
+1
+d/home/kgnugur/Downloads/suckless/dwm
+	..
+0
+d/home/kgnugur/Downloads/suckless
+	st
+2
+d/home/kgnugur/Downloads/suckless/st
+	..
+0
+d/home/kgnugur/Downloads/suckless
+	st
+2
+d/home/kgnugur/Downloads
+	..
+0
+d/home/kgnugur
+	suckless
+5
+d/home/kgnugur/suckless
+	..
+0
+d/home/kgnugur
+	Downloads
+3
+d/home/kgnugur/Downloads
+	..
+0
+d/home/kgnugur
+	Downloads
+3
+d/home/kgnugur/Downloads
 	..
 0
 d/home/kgnugur
@@ -70,20 +195,454 @@ d/home/kgnugur/Documents
 	..
 0
 d/home/kgnugur
+	suckless
+5
+d/home/kgnugur/suckless
+	dwm-6.1
+1
+d/home/kgnugur/suckless/dwm-6.1
+	..
+0
+d/home/kgnugur/suckless
+	st-0.8.1
+2
+d/home/kgnugur/suckless/st-0.8.1
+	st.c
+8
+d/home/kgnugur
+	newimp
+4
+d/home/kgnugur/newimp
+	..
+0
+d/home/kgnugur
+	newimp
+4
+d/home/kgnugur/suckless/st-0.8.1
+	st-scrollback-0.8.diff
+12
+d/home/kgnugur
+	suckless
+6
+d/home/kgnugur/suckless
+	st-0.8.1
+2
+d/home/kgnugur/suckless/st-0.8.1
+	..
+0
+d/home/kgnugur/suckless
+	..
+0
+d/home/kgnugur
+	st
+5
+d/home/kgnugur/st
+	
+5
+d/home/kgnugur
+	st-0.8.1
+5
+d/home/kgnugur/st-0.8.1
+	st-no_bold_colors-0.8.1.diff
+10
+d/home/kgnugur/suckless
+	st-0.8.1
+2
+d/home/kgnugur/suckless/st-0.8.1
+	st.h.orig
+22
+d/home/kgnugur
+	suckless
+5
+d/home/kgnugur/suckless
+	st-0.8.1
+2
+d/home/kgnugur/suckless/st-0.8.1
+	st-spoiler-20180309-c5ba9c0.diff
+17
+d/home/kgnugur
+	suckless
+5
+d/home/kgnugur/suckless
+	st-0.8.1
+2
+d/home/kgnugur/suckless/st-0.8.1
+	st-xresources-20180309-c5ba9c0.diff
+19
+d/home/kgnugur
+	Codes
+1
+d/home/kgnugur/Codes
+	..
+0
+d/home/kgnugur
 	Documents
 2
+d/home/kgnugur/Documents
+	..
+0
+d/home/kgnugur
+	Downloads
+3
+d/home/kgnugur/Downloads
+	..
+0
+d/home/kgnugur
+	Documents
+2
+d/home/kgnugur/Documents
+	Linux
+2
+d/home/kgnugur/Documents/Linux
+	..
+0
+d/home/kgnugur/Documents
+	Linux
+2
+d/home/kgnugur/Documents/Linux
+	the-art-of-command-line.pdf
+2
+d/home/kgnugur
+	Codes
+1
+d/home/kgnugur/Codes
+	..
+0
+d/home/kgnugur
+	Documents
+2
+d/home/kgnugur/Documents
+	Resume
+3
+d/home/kgnugur
+	Documents
+2
+d/home/kgnugur/Documents
+	Resume
+3
+d/home/kgnugur/Documents/Resume
+	..
+0
+d/home/kgnugur/Documents
+	Resume
+3
 
 # Right window history (oldest to newest):
+D/home/kgnugur/suckless
+	..
+0
+D/home/kgnugur/suckless/dwm
+	
+0
+D/home/kgnugur/suckless
+	.git
+1
+D/home/kgnugur
+	.emoji
+27
+D/home/kgnugur/suckless
+	.git
+1
+D/home/kgnugur/suckless/dwm
+	..
+0
+D/home/kgnugur/suckless
+	..
+0
+D/home/kgnugur
+	Downloads
+3
+D/home/kgnugur/Downloads
+	dwm
+2
+D/home/kgnugur/Downloads/dwm
+	..
+0
+D/home/kgnugur/Downloads
+	..
+0
+D/home/kgnugur
+	Downloads
+3
+D/home/kgnugur/Downloads
+	suckless
+3
+D/home/kgnugur/Downloads/suckless
+	dwm
+1
+D/home/kgnugur/Downloads/suckless/dwm
+	config.h
+5
+D/home/kgnugur/suckless
+	..
+0
+D/home/kgnugur
+	Downloads
+3
+D/home/kgnugur/suckless/st
+	..
+0
+D/home/kgnugur/suckless
+	..
+0
+D/home/kgnugur
+	Downloads
+3
+D/home/kgnugur/Downloads
+	Elfen_Lied
+1
+D/home/kgnugur/suckless/st
+	..
+0
+D/home/kgnugur/suckless
+	..
+0
+D/home/kgnugur
+	Downloads
+3
+D/home/kgnugur/Downloads
+	Elfen_Lied
+1
+D/home/kgnugur/Documents/st
+	..
+0
+D/home/kgnugur/Documents
+	..
+0
+D/home/kgnugur
+	Downloads
+3
+D/home/kgnugur/Downloads
+	Elfen_Lied
+1
+D/home/kgnugur/Documents/st
+	..
+0
+D/home/kgnugur/Documents
+	..
+0
+D/home/kgnugur
+	Downloads
+3
+D/home/kgnugur/Downloads
+	Elfen_Lied
+1
+D/home/kgnugur/Documents/st
+	..
+0
+D/home/kgnugur/Documents
+	..
+0
+D/home/kgnugur
+	Downloads
+3
+D/home/kgnugur/st
+	..
+0
+D/home/kgnugur
+	Codes
+1
+D/home/kgnugur/Codes
+	..
+0
+D/home/kgnugur
+	Documents
+2
+D/home/kgnugur/Documents
+	st-no_bold_colors-0.8.1.diff
+6
+D/home/kgnugur/st
+	..
+0
+D/home/kgnugur
+	Downloads
+3
+D/home/kgnugur/Downloads
+	st
+2
+D/home/kgnugur/Downloads/st
+	st-no_bold_colors-0.8.1.diff
+10
+D/home/kgnugur
+	..
+0
+D/home/kgnugur/suckless
+	..
+0
+D/home/kgnugur
+	Downloads
+3
+D/home/kgnugur/Downloads
+	..
+0
+D/home/kgnugur/suckless/st-0.8.1
+	..
+0
+D/home/kgnugur/suckless
+	..
+0
+D/home/kgnugur
+	Downloads
+3
+D/home/kgnugur/Downloads
+	st-vertcenter-20180320-6ac8c8a.diff
+4
+D/home/kgnugur/suckless/st-0.8.1
+	..
+0
+D/home/kgnugur/suckless
+	..
+0
+D/home/kgnugur
+	Downloads
+3
+D/home/kgnugur/Downloads
+	st-scrollback-0.8.diff
+3
+D/home/kgnugur/suckless/st-0.8.1
+	..
+0
+D/home/kgnugur/suckless
+	..
+0
+D/home/kgnugur
+	Downloads
+3
+D/home/kgnugur/Downloads
+	st-scrollback-20181224-096b125.diff
+4
+D/home/kgnugur
+	Downloads
+3
+D/home/kgnugur/Downloads
+	st-scrollback-0.7.diff
+2
+D/home/kgnugur
+	Downloads
+3
+D/home/kgnugur/suckless/st-0.8.1
+	..
+0
+D/home/kgnugur/suckless
+	st-0.8.1
+2
+D/home/kgnugur/suckless/st-0.8.1
+	..
+0
+D/home/kgnugur/suckless
+	..
+0
+D/home/kgnugur
+	Downloads
+3
+D/home/kgnugur/Downloads
+	st-scrollback-0.8.diff
+4
+D/home/kgnugur
+	Downloads
+3
+D/home/kgnugur/Downloads
+	..
+0
+D/home/kgnugur
+	suckless
+6
+D/home/kgnugur/suckless
+	st-0.8.1
+2
+D/home/kgnugur/suckless/st-0.8.1
+	st.1
+10
+D/home/kgnugur/suckless
+	..
+0
+D/home/kgnugur
+	Downloads
+3
+D/home/kgnugur/Downloads
+	..
+0
+D/home/kgnugur
+	st-0.8.1
+5
+D/home/kgnugur/st-0.8.1
+	..
+0
+D/home/kgnugur
+	Downloads
+3
+D/home/kgnugur/Downloads
+	..
+0
+D/home/kgnugur
+	newimp
+4
+D/home/kgnugur/newimp
+	st-0.8.1
+2
+D/home/kgnugur/newimp/st-0.8.1
+	config.mk
+9
+D/home/kgnugur
+	Downloads
+3
+D/home/kgnugur/Downloads
+	st-solarized-dark-20180411-041912a.diff
+4
+D/home/kgnugur
+	Downloads
+3
+D/home/kgnugur/Downloads
+	st-solarized-dark-20180411-041912a.diff
+4
+D/home/kgnugur
+	.config
+3
+D/home/kgnugur/.config
+	..
+0
+D/home/kgnugur
+	.scripts
+16
+D/home/kgnugur/.scripts
+	statusbar
+4
+D/home/kgnugur/.scripts/statusbar
+	dwmvolume
+1
+D/home/kgnugur
+	..
+0
+D/home
+	kgnugur
+1
+D/
+	media
+8
+D/media
+	..
+0
+D/
+	bin
+0
 D/home/kgnugur
 	..
 0
 
 # Command line history (oldest to newest):
+:d"
+:jk
+:to
+:mkdir newimp
+:jkkkjj
+:touch dwmvolume
+:h
 :q
 
 # Search history (oldest to newest):
 
 # Prompt history (oldest to newest):
+pautostartttt
 
 # Local filter history (oldest to newest):
 
@@ -100,6 +659,54 @@ t/home/kgnugur/.local/share/vifm/Trash/000_Blog-Ideas
 	/home/kgnugur/Documents/Resume/Blog-Ideas
 t/home/kgnugur/.local/share/vifm/Trash/000_.lesshst
 	/home/kgnugur/Documents/.lesshst
+t/home/kgnugur/.local/share/vifm/Trash/000_.dwm
+	/home/kgnugur/.dwm
+t/home/kgnugur/.local/share/vifm/Trash/000_dwm
+	/home/kgnugur/dwm
+t/home/kgnugur/.local/share/vifm/Trash/000_.git
+	/home/kgnugur/suckless/dwm/.git
+t/home/kgnugur/.local/share/vifm/Trash/002_.git
+	/home/kgnugur/suckless/st/.git
+t/home/kgnugur/.local/share/vifm/Trash/001_dwm
+	/home/kgnugur/suckless/dwm
+t/home/kgnugur/.local/share/vifm/Trash/000_suckless
+	/home/kgnugur/Downloads/suckless
+t/home/kgnugur/.local/share/vifm/Trash/002_dwm
+	/home/kgnugur/Downloads/dwm
+t/home/kgnugur/.local/share/vifm/Trash/000_st-solarized-both-20170626-b331da5.diff
+	/home/kgnugur/suckless/st/st-solarized-both-20170626-b331da5.diff
+t/home/kgnugur/.local/share/vifm/Trash/001_st-solarized-both-20170626-b331da5.diff
+	/home/kgnugur/Documents/st/st-solarized-both-20170626-b331da5.diff
+t/home/kgnugur/.local/share/vifm/Trash/000_xst
+	/home/kgnugur/xst
+t/home/kgnugur/.local/share/vifm/Trash/000_st
+	/home/kgnugur/st
+t/home/kgnugur/.local/share/vifm/Trash/001_st
+	/home/kgnugur/Downloads/st
+t/home/kgnugur/.local/share/vifm/Trash/001_suckless
+	/home/kgnugur/newimp/suckless
+t/home/kgnugur/.local/share/vifm/Trash/000_st-vertcenter-0.7.diff
+	/home/kgnugur/suckless/st-0.8.1/st-vertcenter-0.7.diff
+t/home/kgnugur/.local/share/vifm/Trash/000_st-scrollback-0.7.diff
+	/home/kgnugur/Downloads/st-scrollback-0.7.diff
+t/home/kgnugur/.local/share/vifm/Trash/000_st-scrollback-0.8.diff
+	/home/kgnugur/Downloads/st-scrollback-0.8.diff
+t/home/kgnugur/.local/share/vifm/Trash/000_st-scrollback-20181224-096b125.diff
+	/home/kgnugur/Downloads/st-scrollback-20181224-096b125.diff
+t/home/kgnugur/.local/share/vifm/Trash/001_st-vertcenter-0.7.diff
+	/home/kgnugur/Downloads/st-vertcenter-0.7.diff
+t/home/kgnugur/.local/share/vifm/Trash/000_st-vertcenter-20180320-6ac8c8a.diff
+	/home/kgnugur/Downloads/st-vertcenter-20180320-6ac8c8a.diff
+t/home/kgnugur/.local/share/vifm/Trash/000_st-scrollback-0.7 (1).diff
+	/home/kgnugur/Downloads/st-scrollback-0.7 (1).diff
+t/home/kgnugur/.local/share/vifm/Trash/000_st-vertcenter-20171207-0ac685f.diff
+	/home/kgnugur/suckless/st-0.8.1/st-vertcenter-20171207-0ac685f.diff
+t/home/kgnugur/.local/share/vifm/Trash/001_st-vertcenter-20171207-0ac685f.diff
+	/home/kgnugur/Downloads/st-vertcenter-20171207-0ac685f.diff
+t/home/kgnugur/.local/share/vifm/Trash/002_st-scrollback-0.8.diff
+	/home/kgnugur/suckless/st-0.8.1/st-scrollback-0.8.diff
+t/home/kgnugur/.local/share/vifm/Trash/000_st-spoiler-0.7.diff
+	/home/kgnugur/suckless/st-0.8.1/st-spoiler-0.7.diff
 
 # State:
 f
@@ -108,6 +715,6 @@ i1
 [F
 F
 I1
-].1
+].0
 ]F
 s0
