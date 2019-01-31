@@ -26,9 +26,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/kgnugur/suckless
-	st-0.8.1
-2
 d/home/kgnugur/suckless/st-0.8.1
 	..
 0
@@ -326,6 +323,9 @@ d/home/kgnugur/Documents/Resume
 d/home/kgnugur/Documents
 	Resume
 3
+d/home/kgnugur
+	Documents
+2
 
 # Right window history (oldest to newest):
 D/home/kgnugur/suckless

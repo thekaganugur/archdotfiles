@@ -11,8 +11,6 @@ Plug 'mboughaba/i3config.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 Plug 'itchyny/lightline.vim'
-"Plug 'shinchu/lightline-gruvbox.vim'
-"Plug 'morhetz/gruvbox'
 Plug '/usr/bin/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'altercation/vim-colors-solarized'
@@ -42,6 +40,10 @@ Plug 'ncm2/ncm2'
 Plug 'roxma/nvim-yarp'
 Plug 'ncm2/ncm2-bufword'
 Plug 'ncm2/ncm2-path'
+
+
+Plug 'vim-python/python-syntax'
+Plug 'ncm2/ncm2-jedi'
 call plug#end()
 
 
@@ -86,7 +88,7 @@ map <leader>p :!opout <c-r>%<CR><CR>
 
 
 " Set syntax highlighting for specific file types
-autocmd BufRead,BufNewFile *.Rmd',*.rmd,*.md,*.markdown,*.mdown set filetype=markdown
+autocmd BufRead,BufNewFile *.Rmd,*.rmd,*.md,*.markdown,*.mdown set filetype=markdown
 autocmd BufRead,BufNewFile /tmp/calcurse*,~/.calcurse/notes/* set filetype=markdown
 autocmd BufRead,BufNewFile *.ms,*.me,*.mom,*.man set filetype=groff
 autocmd BufRead,BufNewFile *.tex set filetype=tex
@@ -201,25 +203,34 @@ let g:closetag_filetypes = 'html,js,javascript,jsx'
 
 " -- Linting, Auto Fix, Complation --
 let g:ale_fixers = {
-\   'javascript': ['prettier'],
-\   'javascript.jsx': ['prettier'],
+ \   'javascript': ['prettier'],
+ \   'javascript.jsx': ['prettier'],
+ \ 'python': ['yapf'],
 \}
 let g:ale_linter_aliases = {'jsx': ['css', 'javascript']}
-let g:ale_linters = {'jsx': ['stylelint', 'eslint']}
-let g:ale_fix_on_save = 1
+let g:ale_linters = {'jsx': ['stylelint', 'eslint'], 'python': ['flake8']}
 nmap <leader>d <Plug>(ale_fix)
 let g:ale_javascript_prettier_use_local_config = 1 " use .prettiercr
-autocmd BufRead,BufNewFile *js let g:ale_sign_column_always = 1 " always open the gutter
+autocmd BufRead,BufNewFile *js,*py let g:ale_sign_column_always = 1 " always open the gutter
 highlight clear SignColumn " gutter is same color as background
 " Move between linting errors
 nnoremap ]r :ALENextWrap<CR>
 nnoremap [r :ALEPreviousWrap<CR>
-let g:airline#extensions#ale#enabled = 1 " error & warning shown in airline
+
+let g:ale_lint_on_text_changed = 'never'
+let g:ale_lint_on_enter=0
+let g:ale_fix_on_save = 1
+
+let g:ale_sign_warning='.'
+let g:ale_sign_error='●'
+" let g:ale_sign_error = '⤫'
+" let g:ale_lint_on_text_changed='never'
 
 
 let g:LanguageClient_serverCommands = {
  \ 'javascript': ['javascript-typescript-stdio'],
  \ 'javascript.jsx': ['javascript-typescript-stdio'],
+ \ 'python': ['pyls'],
  \ }
 
 nnoremap <F5> :call LanguageClient_contextMenu()<CR>
@@ -291,3 +302,8 @@ endfunction
 
 " map F12 to ToggleSolarizedTheme() function
 map <F12> :call ToggleSolarizedTheme()<CR>
+
+
+
+" Python
+let g:python_highlight_all = 1
