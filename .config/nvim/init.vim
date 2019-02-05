@@ -61,7 +61,6 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 set clipboard=unnamedplus
 " Automatically deletes all trailing whitespace on save.
 autocmd BufWritePre * %s/\s\+$//e
-" Enable buffer resizeing by mouse
 set mouse=n
 set cursorline
 
@@ -95,7 +94,7 @@ autocmd BufRead,BufNewFile *.tex set filetype=tex
 autocmd BufRead,BufNewFile .{jscs,jshint,eslint}rc set filetype=json
 
 " Markdown autowrap text:
-au BufRead,BufNewFile *.md setlocal textwidth=80
+" au BufRead,BufNewFile *.md setlocal textwidth=80
 
 " Use urlscan to choose and open a url:
 :noremap <leader>u :w<Home> !urlscan -r 'linkhandler {}'<CR>
@@ -145,33 +144,21 @@ autocmd! User GoyoLeave call <SID>goyo_leave()
 nnoremap <leader><space> :nohlsearch<CR>
 set ignorecase  " ignore case when searching
 set smartcase  " ignore case if search pattern is all lowercase, case-sensitive otherwise
-"set hlsearch  " highlight matches
-"set copyindent  " copy the previous indentation on autoindenting
-"set shiftround  " use multiple of shiftwidth when indenting with '<' and '>'
-"set showmatch  " set show matching parenthesis
-"set incsearch  " show search matches as you type
 
 " -- Indent --
 set expandtab  " tabs are spaces
 set autoindent
-set smarttab
+" set smarttab
+set tabstop=4
+autocmd BufRead,BufNewFile *.js,*.html,*.css set tabstop=2
 set softtabstop=4
-autocmd BufRead,BufNewFile *js set softtabstop=2
+autocmd BufRead,BufNewFile *.js,*.html,*.css set softtabstop=2
 set shiftwidth=4
-autocmd BufRead,BufNewFile *js set shiftwidth=2
+autocmd BufRead,BufNewFile *.js,*.html,*.css set shiftwidth=2
+
+set textwidth=79
 
 
-" set termguicolors
-" let g:gruvbox_contrast_light=1
-" let g:gruvbox_italic=1
-" colorscheme gruvbox
-" set background=light
-"
-" let g:lightline = {}
-" let g:lightline.colorscheme = 'gruvbox'
-
-
-syntax enable
 set background=dark
 colorscheme solarized
 call togglebg#map("<F6>")
@@ -202,29 +189,27 @@ let g:closetag_filetypes = 'html,js,javascript,jsx'
 
 
 " -- Linting, Auto Fix, Complation --
+let g:ale_linters = {'jsx': ['stylelint', 'eslint'], 'python': ['flake8']}
+let g:ale_linter_aliases = {'jsx': ['css', 'javascript']}
 let g:ale_fixers = {
  \   'javascript': ['prettier'],
  \   'javascript.jsx': ['prettier'],
- \ 'python': ['yapf'],
+ \   'python': ['yapf'],
 \}
-let g:ale_linter_aliases = {'jsx': ['css', 'javascript']}
-let g:ale_linters = {'jsx': ['stylelint', 'eslint'], 'python': ['flake8']}
+
 nmap <leader>d <Plug>(ale_fix)
 let g:ale_javascript_prettier_use_local_config = 1 " use .prettiercr
-autocmd BufRead,BufNewFile *js,*py let g:ale_sign_column_always = 1 " always open the gutter
 highlight clear SignColumn " gutter is same color as background
 " Move between linting errors
 nnoremap ]r :ALENextWrap<CR>
 nnoremap [r :ALEPreviousWrap<CR>
 
-let g:ale_lint_on_text_changed = 'never'
-let g:ale_lint_on_enter=0
-let g:ale_fix_on_save = 1
-
 let g:ale_sign_warning='.'
 let g:ale_sign_error='●'
-" let g:ale_sign_error = '⤫'
-" let g:ale_lint_on_text_changed='never'
+
+let g:ale_lint_on_enter=0
+let g:ale_lint_on_text_changed = 'never'
+let g:ale_fix_on_save = 1
 
 
 let g:LanguageClient_serverCommands = {
@@ -232,6 +217,7 @@ let g:LanguageClient_serverCommands = {
  \ 'javascript.jsx': ['javascript-typescript-stdio'],
  \ 'python': ['pyls'],
  \ }
+let  g:LanguageClient_useVirtualText = 0
 
 nnoremap <F5> :call LanguageClient_contextMenu()<CR>
 " Or map each action separately
@@ -239,6 +225,7 @@ nnoremap <silent> K :call LanguageClient#textDocument_hover()<CR>
 nnoremap <silent> gd :call LanguageClient#textDocument_definition()<CR>
 nnoremap <silent> <F2> :call LanguageClient#textDocument_rename()<CR>
 
+autocmd BufRead,BufNewFile *js,*py set signcolumn=yes " always open the gutter
 
 
 autocmd BufEnter * call ncm2#enable_for_buffer()

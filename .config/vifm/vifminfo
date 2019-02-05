@@ -26,9 +26,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/kgnugur/suckless/st-0.8.1
-	..
-0
 d/home/kgnugur/suckless
 	..
 0
@@ -324,8 +321,11 @@ d/home/kgnugur/Documents
 	Resume
 3
 d/home/kgnugur
-	Documents
-2
+	.config
+4
+d/home/kgnugur/.config
+	compton.conf
+8
 
 # Right window history (oldest to newest):
 D/home/kgnugur/suckless
@@ -711,7 +711,7 @@ t/home/kgnugur/.local/share/vifm/Trash/000_st-spoiler-0.7.diff
 # State:
 f
 i1
-[.1
+[.0
 [F
 F
 I1
