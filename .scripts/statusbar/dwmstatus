@@ -1,0 +1,43 @@
+#!/bin/bash
+
+print_date () {
+    date '+%H:%M'
+}
+
+print_volume() {
+    vol="$(amixer get Master | tail -n1 | sed -r 's/.*\[(.*)%\].*/\1/')"
+    sink=$(pacmd list-sinks |\
+        awk '/^\s*\*/{f=1}/^\s*index:/{f=0}f' |\
+        grep "alsa.name\|alsa.mixer_name" |\
+        head -n1 |\
+        sed 's/.*= "\(.*\)".*/\1/')
+
+    if [ $(pulsemixer --get-mute) == 1 ]; then
+        echo "Muted"
+    else
+        if [ "$sink" == "ALC898 Digital" ]; then
+            echo "Ext:${vol}%"
+        else
+            echo "Int:${vol}%"
+        fi
+    fi
+
+}
+
+print_power() {
+    status=$(cat /sys/class/power_supply/ADP1/online)
+    battery=$(cat /sys/class/power_supply/BAT1/capacity)
+
+    if [ $status == 1 ]; then
+        echo "${battery}c"
+    else
+        echo "${battery}d"
+    fi
+}
+
+print_wifi() {
+    wifiessid="$(/sbin/iwconfig | grep ESSID | cut -d: -f2)"
+    echo ${wifiessid}
+}
+
+xsetroot -name "$(print_wifi) < $(print_volume) < $(print_power) < $(print_date)"
