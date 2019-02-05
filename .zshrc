@@ -76,7 +76,7 @@ alias svia="pushd ~/Codes/via-app && v -S vimSessionStart"
 alias p="sudo pacman"
 alias pkglist="pacman -Qqe > .pkglist.txt"
 
-alias update="sudo pacman -Syu && yay -Syu && flatpak update"
+alias update="yay -Syu && flatpak update"
 
 # Adding color
 alias ls='ls -hN --color=auto --group-directories-first'
