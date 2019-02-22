@@ -6,4 +6,4 @@ export TERMINAL="st"
 # export BROWSER="google-chrome-stable"
 export BROWSER="firefox"
 export READER="zathura"
-export FZF_DEFAULT_COMMAND='rg --files --hidden --follow'
+# export FZF_DEFAULT_COMMAND='rg --files --hidden --follow'

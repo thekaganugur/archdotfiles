@@ -26,9 +26,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/kgnugur/suckless
-	..
-0
 d/home/kgnugur
 	suckless
 5
@@ -326,6 +323,9 @@ d/home/kgnugur
 d/home/kgnugur/.config
 	compton.conf
 8
+d/home/kgnugur
+	.zshrc
+27
 
 # Right window history (oldest to newest):
 D/home/kgnugur/suckless
@@ -626,8 +626,8 @@ D/
 	bin
 0
 D/home/kgnugur
-	..
-0
+	.thumbnails
+15
 
 # Command line history (oldest to newest):
 :d"

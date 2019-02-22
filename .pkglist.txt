@@ -1,10 +1,10 @@
 acpi
 acpilight
 adwaita-dark
-alacritty
 alsa-utils
 arandr
 asciiquarium
+atom
 atool
 autoconf
 automake
@@ -14,7 +14,6 @@ bison
 bzip2
 calcurse
 cmatrix
-code
 compton
 coreutils
 cowsay
@@ -33,7 +32,6 @@ file
 filesystem
 findutils
 firefox
-fish
 flatpak
 flex
 fzf
@@ -64,7 +62,6 @@ intel-ucode
 iproute2
 iputils
 jfsutils
-leafpad
 less
 libreoffice-still
 libtool
@@ -76,13 +73,16 @@ linux-lts-headers
 logrotate
 lvm2
 lxappearance
+lxterminal
 m4
 make
 man-db
 man-pages
 mdadm
+menu-calc
 mpv
 nano
+neofetch
 neovim
 netctl
 networkmanager
@@ -97,6 +97,7 @@ p7zip
 pacman
 pandoc
 patch
+pavucontrol
 pciutils
 pcmanfm
 perl
@@ -110,6 +111,7 @@ python-pip
 ranger
 redshift
 reiserfsprogs
+ripgrep
 s-nail
 scrot
 sed
@@ -119,6 +121,7 @@ sysfsutils
 systemd
 systemd-sysvcompat
 tar
+testdisk
 texinfo
 texlive-bibtexextra
 texlive-core
@@ -151,6 +154,7 @@ unzip
 usbutils
 util-linux
 vi
+vifm
 w3m
 which
 xarchiver

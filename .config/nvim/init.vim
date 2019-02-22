@@ -93,9 +93,6 @@ autocmd BufRead,BufNewFile *.ms,*.me,*.mom,*.man set filetype=groff
 autocmd BufRead,BufNewFile *.tex set filetype=tex
 autocmd BufRead,BufNewFile .{jscs,jshint,eslint}rc set filetype=json
 
-" Markdown autowrap text:
-" au BufRead,BufNewFile *.md setlocal textwidth=80
-
 " Use urlscan to choose and open a url:
 :noremap <leader>u :w<Home> !urlscan -r 'linkhandler {}'<CR>
 :noremap ,, !urlscan -r 'linkhandler {}'<CR>
@@ -156,12 +153,26 @@ autocmd BufRead,BufNewFile *.js,*.html,*.css set softtabstop=2
 set shiftwidth=4
 autocmd BufRead,BufNewFile *.js,*.html,*.css set shiftwidth=2
 
-set textwidth=79
+
+autocmd BufRead,BufNewFile *.js,*.html,*.css,*py,*md set textwidth=79
+autocmd BufRead,BufNewFile *.js,*.html,*.css,*py,*md set colorcolumn=+1        " highlight column after 'textwidth'
 
 
 set background=dark
 colorscheme solarized
-call togglebg#map("<F6>")
+
+" define function to toggle solarized theme
+" change background and update lightline color scheme
+function! ToggleSolarizedTheme()
+  let &background = ( &background == "dark"? "light" : "dark" )
+  if exists("g:lightline")
+    runtime autoload/lightline/colorscheme/solarized.vim
+    call lightline#colorscheme()
+  endif
+endfunction
+
+map <F12> :call ToggleSolarizedTheme()<CR>
+
 
 let g:lightline = {
       \ 'colorscheme': 'solarized',
@@ -265,8 +276,6 @@ augroup CursorLine
 augroup END
 
 
-
-
 " Terminal settings
 au TermOpen * setlocal nonumber laststatus=0
 tnoremap <leader><ESC> <C-\><C-n>
@@ -275,21 +284,6 @@ let g:neoterm_autoscroll = 1
 
 " Tree style for netrw or vinegar
 let g:netrw_liststyle = 3
-
-
-" define function to toggle solarized theme
-" change background and update lightline color scheme
-function! ToggleSolarizedTheme()
-  let &background = ( &background == "dark"? "light" : "dark" )
-  if exists("g:lightline")
-    runtime autoload/lightline/colorscheme/solarized.vim
-    call lightline#colorscheme()
-  endif
-endfunction
-
-" map F12 to ToggleSolarizedTheme() function
-map <F12> :call ToggleSolarizedTheme()<CR>
-
 
 
 " Python
