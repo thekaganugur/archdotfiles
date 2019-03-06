@@ -87,16 +87,12 @@ alias ei3="nvim ~/.config/i3/config"
 alias envim="nvim ~/.config/nvim/init.vim"
 
 
-
 [ ! -f ~/.shortcuts ] && shortcuts >/dev/null 2>&1
 
 # Start graphical server if tty1
 if [ "$(tty)" = "/dev/tty1" ]; then
     exec startx
 fi
-
-# Switch escape and caps and use wal colors if tty:
-sudo -n loadkeys ~/.scripts/ttymaps.kmap 2>/dev/null
 
 
 source /usr/share/fzf/completion.zsh

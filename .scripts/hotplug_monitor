@@ -5,7 +5,7 @@ export DISPLAY=:0
 export XAUTHORITY=/home/kgnugur/.Xauthority
 
 function connect(){
-  xrandr --output HDMI-2 --primary --auto  --left-of eDP-1
+  xrandr --output HDMI-1-2 --primary --auto  --left-of eDP-1-1
   xrandr --auto
   # Fix feh background if screen size/arangement has changed.
   feh --bg-scale "$HOME/.config/wall.jpg"
@@ -17,7 +17,7 @@ function connect(){
 }
 
 function disconnect(){
-  xrandr --output HDMI-2 --off
+  xrandr --output HDMI-1-2 --off
   # Fix feh background if screen size/arangement has changed.
   feh --bg-scale "$HOME/.config/wall.jpg"
   # Restart dunst to ensure proper location on screen
@@ -27,4 +27,4 @@ function disconnect(){
   remaps
 }
 
-xrandr | grep "HDMI-2 connected" &> /dev/null && connect || disconnect
+xrandr | grep "HDMI-1-2 connected" &> /dev/null && connect || disconnect

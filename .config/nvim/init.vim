@@ -52,7 +52,7 @@ set nocompatible
 filetype plugin on
 syntax on
 set encoding=utf-8
-set number
+" set number
 " Enable autocompletion:
 set wildmenu
 " Disables automatic commenting on newline:
@@ -63,6 +63,8 @@ set clipboard=unnamedplus
 autocmd BufWritePre * %s/\s\+$//e
 set mouse=n
 set cursorline
+
+set noequalalways
 
 
 " Goyo plugin makes text more readable when writing prose:
