@@ -58,6 +58,10 @@ source $ZSH/oh-my-zsh.sh
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
+# Start graphical server if tty1
+if [ "$(tty)" = "/dev/tty1" ]; then
+    exec startx
+fi
 
 
 source /usr/share/fzf/completion.zsh

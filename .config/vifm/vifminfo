@@ -28,33 +28,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/kgnugur/.pki/nssdb
-	key4.db
-2
-d/home/kgnugur/.pki
-	nssdb
-1
-d/home/kgnugur
-	.oh-my-zsh
-13
-d/home/kgnugur/.oh-my-zsh
-	tools
-9
-d/home/kgnugur/.oh-my-zsh/tools
-	install.sh
-2
-d/home/kgnugur/.oh-my-zsh
-	.git
-1
-d/home/kgnugur
-	.nvim
-12
-d/home/kgnugur/.nvim
-	plugged
-1
-d/home/kgnugur
-	.nvim
-12
 d/home/kgnugur/.nvim
 	plugged
 1
@@ -328,6 +301,33 @@ d/home/kgnugur/.config/xarchiver
 d/home/kgnugur/.config
 	zathura
 25
+d/home/kgnugur
+	Documents
+2
+d/home/kgnugur/Documents
+	.zshrc
+2
+d/home/kgnugur
+	.config
+3
+d/home/kgnugur/.config
+	zathura
+26
+d/home/kgnugur
+	.config
+3
+d/home/kgnugur/.config
+	zathura
+26
+d/home/kgnugur
+	Documents
+2
+d/home/kgnugur/Documents
+	.zshrc
+2
+d/home/kgnugur
+	.zshenv
+34
 
 # Right window history (oldest to newest):
 D/home/kgnugur/.scripts/cron
@@ -632,6 +632,7 @@ D/home/kgnugur
 0
 
 # Command line history (oldest to newest):
+:!addr2line
 :d"
 :jk
 :to
@@ -680,7 +681,8 @@ pdmenusessionmanager
 # Local filter history (oldest to newest):
 
 # Registers:
-""/home/kgnugur/.local/share/vifm/Trash/000_google-chrome
+""/home/kgnugur/Documents/.zshenv
+""/home/kgnugur/Documents/.zshrc
 
 # Directory stack (oldest to newest):
 
@@ -887,6 +889,10 @@ t/home/kgnugur/.local/share/vifm/Trash/000_.gnupg
 	/home/kgnugur/.gnupg
 t/home/kgnugur/.local/share/vifm/Trash/000_google-chrome
 	/home/kgnugur/.config/google-chrome
+t/home/kgnugur/.local/share/vifm/Trash/000_.zshenv
+	/home/kgnugur/.zshenv
+t/home/kgnugur/.local/share/vifm/Trash/000_.zshrc.pre-oh-my-zsh
+	/home/kgnugur/.zshrc.pre-oh-my-zsh
 
 # State:
 f
