@@ -58,41 +58,6 @@ source $ZSH/oh-my-zsh.sh
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
-alias e="$EDITOR"
-alias v="nvim"
-alias sv="sudo nvim"
-alias r="ranger"
-alias sr="sudo ranger"
-alias vf="vifm"
-alias svf="sudo vifm"
-alias ka="killall"
-alias g="git"
-alias n="npm"
-alias c="code"
-
-alias via="pushd ~/Codes/via-app && v -S"
-alias svia="pushd ~/Codes/via-app && v -S vimSessionStart"
-
-alias p="sudo pacman"
-alias pkglist="pacman -Qqe > .pkglist.txt"
-
-alias update="yay -Syu && flatpak update"
-
-# Adding color
-alias ls='ls -hN --color=auto --group-directories-first'
-alias grep="grep --color=auto"
-alias diff="diff --color=auto"
-
-alias ei3="nvim ~/.config/i3/config"
-alias envim="nvim ~/.config/nvim/init.vim"
-
-
-[ ! -f ~/.shortcuts ] && shortcuts >/dev/null 2>&1
-
-# Start graphical server if tty1
-if [ "$(tty)" = "/dev/tty1" ]; then
-    exec startx
-fi
 
 
 source /usr/share/fzf/completion.zsh

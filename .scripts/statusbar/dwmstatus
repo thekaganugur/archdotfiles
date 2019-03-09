@@ -1,4 +1,5 @@
 #!/bin/bash
+# Needs wireless_tools for wifiessid info
 
 print_date () {
     date '+%H:%M'

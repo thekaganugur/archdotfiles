@@ -1,24 +1,26 @@
 # You can edit this file by hand, but it's recommended not to do that.
 
 # Marks:
-'H
-	/home/kgnugur/
-	..
-1548169310
 'b
 	/home/kgnugur/bin/
 	..
-1548169310
+1552070887
 'h
 	/home/kgnugur/
 	..
-1548169310
+1552070887
 
 # Bookmarks:
+b/home/kgnugur/
+	~
+	1552070623
+b/media/
+	media
+	1552070697
 
 # TUI:
-ar
-q0
+al
+q1
 v2
 ov
 m-1
@@ -26,515 +28,308 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/kgnugur
-	Downloads
-3
-d/home/kgnugur/Downloads
-	..
-0
-d/home/kgnugur
-	dwm
-4
-d/home/kgnugur/dwm
-	config.h
-7
-d/home/kgnugur
-	st
-5
-d/home/kgnugur/Codes
-	..
-0
-d/home/kgnugur
-	..
-0
-d/home
-	kgnugur
+d/home/kgnugur/.pki/nssdb
+	key4.db
+2
+d/home/kgnugur/.pki
+	nssdb
 1
 d/home/kgnugur
-	dwm
-4
-d/home/kgnugur/dwm
-	config.h
-7
-d/home/kgnugur
-	Downloads
-3
-d/home/kgnugur/dwm
-	config.h
-7
-d/home/kgnugur
-	Downloads
-3
-d/home/kgnugur/Downloads
-	..
-0
-d/home/kgnugur
-	dwm
-4
-d/home/kgnugur/dwm
-	config.h
-7
-d/home/kgnugur
-	dwm
-4
-d/home/kgnugur/dwm
-	config.h
-7
-d/home/kgnugur
-	dwm
-4
-d/home/kgnugur/dwm
-	config.h
-7
-d/home/kgnugur
-	Downloads
-3
-d/home/kgnugur/Downloads
-	..
-0
-d/home/kgnugur
-	Documents
-2
-d/home/kgnugur/Documents
-	..
-0
-d/home/kgnugur
-	dwm
-4
-d/home/kgnugur/dwm
-	config.h
-7
-d/home/kgnugur/st
-	config.h
-11
-d/home/kgnugur
-	dwm
-4
-d/home/kgnugur/st
-	config.h
-11
-d/home/kgnugur
-	Downloads
-3
-d/home/kgnugur/Downloads
-	..
-0
-d/home/kgnugur
-	Documents
-2
-d/home/kgnugur/Documents
-	..
-0
-d/home/kgnugur
-	Documents
-2
-d/home/kgnugur/Documents
-	..
-0
-d/home/kgnugur
-	Codes
-1
-d/home/kgnugur/Codes
-	..
-0
-d/home/kgnugur
-	dwm
-4
-d/home/kgnugur/dwm
-	config.h
-7
-d/home/kgnugur
-	dwm
-4
-d/home
-	..
-0
-d/
-	home
-4
-d/home/kgnugur
-	..
-0
-d/home
-	kgnugur
-1
-d/
-	mnt
-9
-d/mnt
-	..
-0
-d/
-	media
-8
-d/media
-	..
-0
-d/
-	dev
-2
-d/dev
-	dri
-7
-d/home/kgnugur
-	..
-0
-d/home
-	kgnugur
-1
-d/
-	run
+	.oh-my-zsh
 13
-d/run
-	media
-8
-d/run/media
-	kgnugur
-1
-d/run/media/kgnugur
-	Seagate
-1
-d/run/media/kgnugur/Seagate
-	Distros
-3
-d/run/media/kgnugur/Seagate/Distros
-	..
-0
-d/run/media/kgnugur/Seagate
-	Distros
-3
-d/run/media/kgnugur/Seagate/Distros
-	Wallpaper
-5
-d/run/media/kgnugur/Seagate
-	Documents
-4
-d/run/media/kgnugur/Seagate/Documents
-	..
-0
-d/run/media/kgnugur/Seagate
-	Important
-5
-d/run/media/kgnugur/Seagate/Important
-	WhatsApp Zip 2018-12-16 at 13.45.37.tar.gz
-8
-d/home/kgnugur
-	resume-deniz
-5
-d/home/kgnugur/resume-deniz
-	cv
-1
-d/home/kgnugur/resume-deniz/cv
-	Résumé.tex
-5
-d/home/kgnugur
-	Codes
-1
-d/home/kgnugur/Codes
-	resume-deniz
-1
-d/home/kgnugur/Codes/resume-deniz
-	..
-0
-d/home/kgnugur/Codes
-	resume-deniz
-1
-d/home/kgnugur
-	Codes
-1
-d/home/kgnugur/Codes
-	resume-deniz
-1
-d/home/kgnugur
-	Codes
-1
-d/home/kgnugur/Codes
-	..
-0
-d/home/kgnugur
-	Codes
-1
-d/home/kgnugur/Codes
-	dwm
-1
-d/home/kgnugur
-	Documents
+d/home/kgnugur/.oh-my-zsh
+	tools
+9
+d/home/kgnugur/.oh-my-zsh/tools
+	install.sh
 2
-d/home/kgnugur/Documents
+d/home/kgnugur/.oh-my-zsh
+	.git
+1
+d/home/kgnugur
+	.nvim
+12
+d/home/kgnugur/.nvim
+	plugged
+1
+d/home/kgnugur
+	.nvim
+12
+d/home/kgnugur/.nvim
+	plugged
+1
+d/home/kgnugur/.nvim/plugged
+	ncm2-path
+13
+d/home/kgnugur/.nvim
+	plugged
+1
+d/home/kgnugur
+	.nv
+11
+d/home/kgnugur/.nv
+	GLCache
+1
+d/home/kgnugur
+	.node-gyp
+9
+d/home/kgnugur/.node-gyp
+	11.10.1
+1
+d/home/kgnugur/.node-gyp/11.10.1
+	include
+1
+d/home/kgnugur/.node-gyp/11.10.1/include
+	node
+1
+d/home/kgnugur/.node-gyp/11.10.1/include/node
+	..
+0
+d/home/kgnugur/.node-gyp/11.10.1/include
+	node
+1
+d/home/kgnugur/.node-gyp/11.10.1/include/node
+	..
+0
+d/home/kgnugur/.node-gyp/11.10.1/include
+	node
+1
+d/home/kgnugur/.node-gyp/11.10.1
+	include
+1
+d/home/kgnugur/.node-gyp
+	11.10.1
+1
+d/home/kgnugur
+	.local
+7
+d/home/kgnugur/.local
+	share
+1
+d/home/kgnugur/.local/share
+	vifm
+6
+d/home/kgnugur/.local/share/vifm
+	Trash
+1
+d/home/kgnugur/.local/share/vifm/Trash
+	002_.yarnrc
+43
+d/home/kgnugur/.local/share/vifm
+	..
+0
+d/home/kgnugur/.local/share
+	zathura
+8
+d/home/kgnugur/.local/share/zathura
+	..
+0
+d/home/kgnugur/.local/share
+	ranger
+5
+d/home/kgnugur/.local/share/ranger
+	history
+2
+d/home/kgnugur/.local/share
+	applications
+2
+d/home/kgnugur/.local/share/applications
+	..
+0
+d/home/kgnugur/.local/share
+	Trash
+1
+d/home/kgnugur/.local/share/Trash
+	files
+1
+d/home/kgnugur/.local/share/Trash/files
+	New folder
+1
+d/home/kgnugur/.local/share/Trash/files/New folder
+	..
+0
+d/home/kgnugur/.local/share/Trash/files
+	x
+2
+d/home/kgnugur/.local/share/Trash/files/x
+	..
+0
+d/home/kgnugur/.local/share/Trash/files
+	x
+2
+d/home/kgnugur/.local/share/Trash
+	info
+2
+d/home/kgnugur/.local/share/Trash/info
+	..
+0
+d/home/kgnugur/.local/share/Trash
+	files
+1
+d/home/kgnugur/.local/share/Trash/files
+	x
+2
+d/home/kgnugur/.local/share/Trash/files/x
+	..
+0
+d/home/kgnugur/.local/share/Trash/files
+	New folder
+1
+d/home/kgnugur/.local/share/Trash/files/New folder
+	..
+0
+d/home/kgnugur/.local/share/Trash/files
+	New folder
+1
+d/home/kgnugur/.local/share/Trash
+	files
+1
+d/home/kgnugur/.local/share
+	Trash
+1
+d/home/kgnugur/.local
+	share
+1
+d/home/kgnugur
+	.icons
+6
+d/home/kgnugur/.icons
+	..
+0
+d/home/kgnugur
+	.local
+7
+d/home/kgnugur/.local
+	share
+1
+d/home/kgnugur/.local/share
+	Trash
+1
+d/home/kgnugur/.local
+	share
+1
+d/home/kgnugur
+	.local
+7
+d/home/kgnugur/.local
+	share
+1
+d/home/kgnugur/.local/share
+	vifm
+6
+d/home/kgnugur/.local/share/vifm
+	Trash
+1
+d/home/kgnugur/.local/share/vifm/Trash
+	000_.getkeys
+1
+d/home/kgnugur/.local/share/vifm
+	Trash
+1
+d/home/kgnugur/.local/share/vifm/Trash
+	
+1
+d/home/kgnugur/.local/share/vifm
+	..
+0
+d/home/kgnugur/.local/share
+	vifm
+6
+d/home/kgnugur/.local/share/vifm
+	..
+0
+d/home/kgnugur/.local/share
+	vifm
+6
+d/home/kgnugur/.local
+	share
+1
+d/home/kgnugur
+	.icons
+6
+d/home/kgnugur/.icons
+	..
+0
+d/home/kgnugur
+	.gnupg
+5
+d/home/kgnugur/.gnupg
+	..
+0
+d/home/kgnugur
+	.github
+4
+d/home/kgnugur/.github
+	..
+0
+d/home/kgnugur
+	.config
+3
+d/home/kgnugur/.config
+	mimeapps.list
+28
+d/home/kgnugur
+	.calcurse
+2
+d/home/kgnugur/.calcurse
+	..
+0
+d/home/kgnugur
+	.calcurse
+2
+d/home/kgnugur/.calcurse
+	..
+0
+d/home/kgnugur
+	.cache
+1
+d/home/kgnugur/.cache
+	..
+0
+d/home/kgnugur
+	.gnupg
+5
+d/home/kgnugur/.gnupg
 	..
 0
 d/home/kgnugur
 	Downloads
-3
+18
 d/home/kgnugur/Downloads
 	..
 0
 d/home/kgnugur
-	Downloads
+	.config
 3
-d/home/kgnugur/Downloads
+d/home/kgnugur/.config
+	pcmanfm
+19
+d/home/kgnugur/.config/pcmanfm
+	default
+1
+d/home/kgnugur/.config/pcmanfm/default
+	pcmanfm.conf
+1
+d/home/kgnugur/.config/pcmanfm
+	default
+1
+d/home/kgnugur/.config
+	google-chrome
+8
+d/home/kgnugur/.config/google-chrome
 	..
 0
-d/home/kgnugur
-	Downloads
-3
-d/home
-	kgnugur
+d/home/kgnugur/.config
+	xarchiver
+22
+d/home/kgnugur/.config/xarchiver
+	xarchiverrc
 1
-d/home/kgnugur
-	Codes
-1
-d/home/kgnugur/Codes
-	dwm
-1
-d/home/kgnugur
-	..
-0
-d/home
-	kgnugur
-1
-d/home/kgnugur
-	Documents
-2
-d/home/kgnugur/Documents
-	extract
-2
-d/home/kgnugur
-	Documents
-2
-d/home/kgnugur/Documents
-	..
-0
-d/home/kgnugur
-	..
-0
-d/home
-	kgnugur
-1
-d/home/kgnugur
-	..
-0
-d/home
-	kgnugur
-1
-d/
-	home
-4
-d/home
-	kgnugur
-1
-d/home/kgnugur
-	..
-0
+d/home/kgnugur/.config
+	zathura
+25
 
 # Right window history (oldest to newest):
-D/home/kgnugur/st
-	..
-0
-D/home/kgnugur
-	.scripts
-13
-D/home/kgnugur/st
-	..
-0
-D/home/kgnugur
-	.ssh
-14
-D/home/kgnugur/.ssh
-	google_compute_engine.pem
-1
-D/home/kgnugur
-	Documents
-20
-D/home/kgnugur/Documents
-	New folder.7z
-4
-D/home/kgnugur
-	.scripts
-14
-D/home/kgnugur/.scripts
-	cron
-1
-D/home/kgnugur/.scripts/cron
-	..
-0
-D/home/kgnugur/.scripts
-	i3cmds
-2
-D/home/kgnugur/.scripts/i3cmds
-	displayselect
-5
-D/home/kgnugur/.scripts
-	tools
-4
-D/home/kgnugur/.scripts/tools
-	compiler
-1
-D/home/kgnugur/.scripts
-	tools
-4
-D/home/kgnugur/.scripts/tools
-	compiler
-1
-D/home/kgnugur/.scripts
-	i3cmds
-2
-D/home/kgnugur/.scripts/i3cmds
-	displayselect
-5
-D/home/kgnugur/.scripts
-	i3cmds
-2
-D/home/kgnugur/.scripts/i3cmds
-	dropdowncalc
-5
-D/home/kgnugur/.scripts
-	tools
-4
-D/home/kgnugur/.scripts/tools
-	..
-0
-D/home/kgnugur/.scripts
-	i3cmds
-2
-D/home/kgnugur
-	.scripts
-14
-D/home/kgnugur/.scripts
-	i3cmds
-2
-D/home/kgnugur/.scripts/i3cmds
-	winresize
-15
-D/home/kgnugur/.scripts
-	statusbar
-3
-D/home/kgnugur/.scripts/statusbar
-	dwmstatus
-1
-D/home/kgnugur/.scripts
-	statusbar
-3
-D/home/kgnugur/.scripts/statusbar
-	dwmstatus
-1
-D/home/kgnugur/.scripts
-	i3cmds
-2
-D/home/kgnugur/.scripts/i3cmds
-	winresize
-15
-D/home/kgnugur/.scripts
-	statusbar
-3
-D/home/kgnugur/.scripts/statusbar
-	..
-0
-D/home/kgnugur/.scripts
-	tools
-4
-D/home/kgnugur/.scripts/tools
-	tpb
-21
-D/home/kgnugur/.scripts
-	tools
-4
-D/home/kgnugur/.scripts/tools
-	hotplug_monitor
-11
-D/home/kgnugur/.scripts
-	cron
-1
-D/home/kgnugur/.scripts/cron
-	..
-0
-D/home/kgnugur/.scripts
-	i3cmds
-2
-D/home/kgnugur/.scripts/i3cmds
-	..
-0
-D/home/kgnugur/.scripts
-	tools
-4
-D/home/kgnugur/.scripts/tools
-	shortcuts
-19
-D/home/kgnugur/.scripts
-	tools
-4
-D/home/kgnugur/.scripts/tools
-	transadd
-18
-D/home/kgnugur/.scripts
-	i3cmds
-2
-D/home/kgnugur/.scripts/i3cmds
-	tmuxdd
-12
-D/home/kgnugur/.scripts
-	tools
-4
-D/home/kgnugur/.scripts/tools
-	td-toggle
-16
-D/home/kgnugur/.scripts
-	cron
-1
-D/home/kgnugur/.scripts/cron
-	..
-0
-D/home/kgnugur/.scripts
-	i3cmds
-2
-D/home/kgnugur/.scripts/i3cmds
-	bottomleft
-1
-D/home/kgnugur/.scripts
-	i3cmds
-2
-D/home/kgnugur/.scripts/i3cmds
-	manview
-8
-D/home/kgnugur/.scripts
-	i3cmds
-2
-D/home/kgnugur/.scripts/i3cmds
-	samedir
-10
-D/home/kgnugur/.scripts
-	tools
-4
-D/home/kgnugur/.scripts/tools
-	prompt
-14
-D/home/kgnugur/.scripts
-	i3cmds
-2
-D/home/kgnugur/.scripts/i3cmds
-	tmuxdd
-10
-D/home/kgnugur/.scripts
-	tools
-4
-D/home/kgnugur/.scripts/tools
-	samedir
-16
-D/home/kgnugur/.scripts
-	i3cmds
-2
-D/home/kgnugur/.scripts/i3cmds
-	winresize
-11
-D/home/kgnugur/.scripts
-	tools
-4
-D/home/kgnugur/.scripts/tools
-	toggletouchpad
-20
-D/home/kgnugur/.scripts
-	cron
-1
 D/home/kgnugur/.scripts/cron
 	cronbat
 2
@@ -626,8 +421,215 @@ D/home/kgnugur/.config
 	..
 0
 D/home/kgnugur
-	.zshrc
+	.config
+3
+D/home/kgnugur/.config
+	i3
+9
+D/home/kgnugur
+	.github
+4
+D/home
+	kgnugur
+1
+D/home/kgnugur
+	.scripts
+14
+D/home/kgnugur/.scripts
+	i3cmds
+2
+D/home/kgnugur/.scripts/i3cmds
+	winresize
+11
+D/home/kgnugur/.scripts
+	statusbar
+3
+D/home/kgnugur/.scripts/statusbar
+	..
+0
+D/home/kgnugur/.scripts
+	tools
+4
+D/home/kgnugur/.scripts/tools
+	dmenusessionmanager
+6
+D/home/kgnugur
+	.scripts
+14
+D/home/kgnugur/.scripts
+	tools
+4
+D/home/kgnugur/.scripts/tools
+	dmenusessionmanager
+6
+D/home/kgnugur/.scripts
+	statusbar
+3
+D/home/kgnugur/.scripts/statusbar
+	dwmstatus
+1
+D/home/kgnugur
+	.config
+3
+D/home
+	kgnugur
+1
+D/home/kgnugur
+	.scripts
+14
+D/home/kgnugur/.scripts
+	tools
+4
+D/home/kgnugur/.scripts/tools
+	dmenusessionmanager
+6
+D/home/kgnugur
+	.scripts
+14
+D/home/kgnugur/Codes/st
+	..
+0
+D/home/kgnugur/Codes/via-app
+	
+0
+D/home/kgnugur
+	
+0
+D/home/kgnugur/Codes/via-app/src
+	
+0
+D/home/kgnugur
+	.yarn
+22
+D/home/kgnugur/.yarn
+	bin
+1
+D/home/kgnugur/.yarn/bin
+	..
+0
+D/home/kgnugur/.yarn
+	bin
+1
+D/home/kgnugur
+	.yarn
+22
+D/home/kgnugur/.yarn
+	bin
+1
+D/home/kgnugur/.yarn/bin
+	..
+0
+D/home/kgnugur/.yarn
+	bin
+1
+D/home/kgnugur
+	.zcompdump-arch-5.7.1
 39
+D/home/kgnugur/Codes/personal-blog
+	
+0
+D/home/kgnugur
+	.github
+4
+D/home/kgnugur/.github
+	..
+0
+D/home/kgnugur
+	.config
+3
+D/home/kgnugur/.config
+	vifm
+22
+D/home/kgnugur/.config/vifm
+	scripts
+2
+D/home/kgnugur/.config/vifm/scripts
+	..
+0
+D/home/kgnugur/.config/vifm
+	scripts
+2
+D/home/kgnugur/.config/vifm/scripts
+	README
+1
+D/home/kgnugur/.config/vifm
+	colors
+1
+D/home/kgnugur/.config/vifm/colors
+	Default.vifm
+1
+D/home/kgnugur/.config/vifm
+	colors
+1
+D/home/kgnugur/.config
+	vifm
+22
+D/home/kgnugur
+	.scripts
+16
+D/home/kgnugur/.scripts
+	tools
+4
+D/home/kgnugur/.scripts/tools
+	extract
+9
+D/home/kgnugur/.scripts
+	i3cmds
+2
+D/home/kgnugur/.scripts/i3cmds
+	winresize
+11
+D/home/kgnugur/.scripts
+	tools
+4
+D/home/kgnugur/.scripts/tools
+	extract
+9
+D/home/kgnugur/.scripts
+	tools
+4
+D/home/kgnugur/.scripts/tools
+	extract
+9
+D/home/kgnugur
+	.scripts
+16
+D/home/kgnugur/.scripts
+	statusbar
+3
+D/home/kgnugur/.scripts/statusbar
+	dwmstatus
+1
+D/home/kgnugur/.scripts
+	tools
+4
+D/home/kgnugur/.scripts/tools
+	asd
+1
+D/home/kgnugur/.scripts
+	tools
+4
+D/home/kgnugur/.scripts/tools
+	asd
+1
+D/home/kgnugur/Documents
+	..
+0
+D/home/kgnugur
+	.scripts
+16
+D/home/kgnugur/Codes/dwm
+	..
+0
+D/run/user/1000
+	..
+0
+D/run/user/1000/clipmenu.5.kgnugur
+	..
+0
+D/home/kgnugur
+	..
+0
 
 # Command line history (oldest to newest):
 :d"
@@ -642,12 +644,31 @@ D/home/kgnugur
 :!extract
 :.!st .
 :change
+:touch ButtonPlus.js
+:?
+:range
+:marks
+:bmark ~
+:bmark
+:bmark Codes
+:bmgo
+:bmark media
+:bmarks
+:rename asd
+:::::
 :view
+:w
 :q
 
 # Search history (oldest to newest):
+/s
 /q
 /sessi
+/sessio
+/yarn
+/short
+/bash
+/bas
 
 # Prompt history (oldest to newest):
 pautostartttt
@@ -659,7 +680,7 @@ pdmenusessionmanager
 # Local filter history (oldest to newest):
 
 # Registers:
-""/home/kgnugur/.local/share/vifm/Trash/000_locked.png
+""/home/kgnugur/.local/share/vifm/Trash/000_google-chrome
 
 # Directory stack (oldest to newest):
 
@@ -810,11 +831,67 @@ t/home/kgnugur/.local/share/vifm/Trash/000_New folder.7z
 	/home/kgnugur/Documents/New folder.7z
 t/home/kgnugur/.local/share/vifm/Trash/000_WhatsApp Zip 2018-12-16 at 13.45.37.tar.gz
 	/home/kgnugur/Documents/WhatsApp Zip 2018-12-16 at 13.45.37.tar.gz
+t/home/kgnugur/.local/share/vifm/Trash/000_personal-blog
+	/home/kgnugur/Codes/personal-blog
+t/home/kgnugur/.local/share/vifm/Trash/000_via-frontend
+	/home/kgnugur/Codes/via-frontend
+t/home/kgnugur/.local/share/vifm/Trash/000_.yarnrc
+	/home/kgnugur/.yarnrc
+t/home/kgnugur/.local/share/vifm/Trash/000_.yarn
+	/home/kgnugur/.yarn
+t/home/kgnugur/.local/share/vifm/Trash/000_package.json
+	/home/kgnugur/package.json
+t/home/kgnugur/.local/share/vifm/Trash/000_yarn.lock
+	/home/kgnugur/yarn.lock
+t/home/kgnugur/.local/share/vifm/Trash/000_list
+	/home/kgnugur/list
+t/home/kgnugur/.local/share/vifm/Trash/000_grabc
+	/home/kgnugur/grabc
+t/home/kgnugur/.local/share/vifm/Trash/000_xclip
+	/home/kgnugur/xclip
+t/home/kgnugur/.local/share/vifm/Trash/000_IMG-20180808-WA0016.jpeg
+	/home/kgnugur/IMG-20180808-WA0016.jpeg
+t/home/kgnugur/.local/share/vifm/Trash/000_cd
+	/home/kgnugur/cd
+t/home/kgnugur/.local/share/vifm/Trash/000_compiler
+	/home/kgnugur/.scripts/tools/compiler
+t/home/kgnugur/.local/share/vifm/Trash/000_.fehbg
+	/home/kgnugur/.fehbg
+t/home/kgnugur/.local/share/vifm/Trash/000_.lesshst
+	/home/kgnugur/.lesshst
+t/home/kgnugur/.local/share/vifm/Trash/000_.bash_logout
+	/home/kgnugur/.bash_logout
+t/home/kgnugur/.local/share/vifm/Trash/000_.bash_profile
+	/home/kgnugur/.bash_profile
+t/home/kgnugur/.local/share/vifm/Trash/000_.bashrc
+	/home/kgnugur/.bashrc
+t/home/kgnugur/.local/share/vifm/Trash/000_.esd_auth
+	/home/kgnugur/.esd_auth
+t/home/kgnugur/.local/share/vifm/Trash/000_.nvidia-settings-rc
+	/home/kgnugur/.nvidia-settings-rc
+t/home/kgnugur/.local/share/vifm/Trash/000_.viminfo
+	/home/kgnugur/.viminfo
+t/home/kgnugur/.local/share/vifm/Trash/000_.vim
+	/home/kgnugur/.vim
+t/home/kgnugur/.local/share/vifm/Trash/000_.thumbnails
+	/home/kgnugur/.thumbnails
+t/home/kgnugur/.local/share/vifm/Trash/000_.screenlayout
+	/home/kgnugur/.screenlayout
+t/home/kgnugur/.local/share/vifm/Trash/000_.pki
+	/home/kgnugur/.pki
+t/home/kgnugur/.local/share/vifm/Trash/000_.nv
+	/home/kgnugur/.nv
+t/home/kgnugur/.local/share/vifm/Trash/000_.node-gyp
+	/home/kgnugur/.node-gyp
+t/home/kgnugur/.local/share/vifm/Trash/000_.gnupg
+	/home/kgnugur/.gnupg
+t/home/kgnugur/.local/share/vifm/Trash/000_google-chrome
+	/home/kgnugur/.config/google-chrome
 
 # State:
 f
 i1
-[.1
+[.0
 [F
 F
 I1

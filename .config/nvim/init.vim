@@ -36,14 +36,16 @@ Plug 'autozimu/LanguageClient-neovim', {
     \ 'branch': 'next',
     \ 'do': 'bash install.sh',
     \ }
+
+Plug 'Shougo/echodoc.vim'
+
 Plug 'ncm2/ncm2'
 Plug 'roxma/nvim-yarp'
 Plug 'ncm2/ncm2-bufword'
 Plug 'ncm2/ncm2-path'
-
+Plug 'ncm2/ncm2-jedi'
 
 Plug 'vim-python/python-syntax'
-Plug 'ncm2/ncm2-jedi'
 call plug#end()
 
 
@@ -76,13 +78,13 @@ map <leader>o :setlocal spell! spelllang=en_us<CR>
 " Splits open at the bottom and right, which is non-retarded, unlike vim defaults.
 set splitbelow splitright
 
-" Shortcutting split navigation, saving a keypress:
+" Shortcutting split navigation
 map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
-" Compile document, be it groff/LaTeX/markdown/etc.
+" Compile document, my custom script
 map <leader>c :w! \| !compiler <c-r>%<CR><CR>
 " Open corresponding .pdf/.html or preview
 map <leader>p :!opout <c-r>%<CR><CR>
@@ -115,6 +117,26 @@ autocmd BufWritePost ~/.Xresources,~/.Xdefaults !xrdb %
 " Switch between the last two files
 nnoremap <Leader><Leader> <C-^>
 
+" -- Search --
+nnoremap <leader><space> :nohlsearch<CR>
+set ignorecase  " ignore case when searching
+set smartcase  " ignore case if search pattern is all lowercase, case-sensitive otherwise
+
+" -- Indent --
+set expandtab  " tabs are spaces
+set autoindent
+" set smarttab
+set tabstop=4
+autocmd BufRead,BufNewFile *.js,*.html,*.css set tabstop=2
+set softtabstop=4
+autocmd BufRead,BufNewFile *.js,*.html,*.css set softtabstop=2
+set shiftwidth=4
+autocmd BufRead,BufNewFile *.js,*.html,*.css set shiftwidth=2
+
+
+autocmd BufRead,BufNewFile *.js,*.html,*.css,*py,*md set textwidth=79
+autocmd BufRead,BufNewFile *.js,*.html,*.css,*py,*md set colorcolumn=+1        " highlight column after 'textwidth'
+
 " -- Goyo --
 " Ensure :q to quit even when Goyo is active
 function! s:goyo_enter()
@@ -138,28 +160,7 @@ endfunction
 autocmd! User GoyoEnter call <SID>goyo_enter()
 autocmd! User GoyoLeave call <SID>goyo_leave()
 
-
-" -- Search --
-nnoremap <leader><space> :nohlsearch<CR>
-set ignorecase  " ignore case when searching
-set smartcase  " ignore case if search pattern is all lowercase, case-sensitive otherwise
-
-" -- Indent --
-set expandtab  " tabs are spaces
-set autoindent
-" set smarttab
-set tabstop=4
-autocmd BufRead,BufNewFile *.js,*.html,*.css set tabstop=2
-set softtabstop=4
-autocmd BufRead,BufNewFile *.js,*.html,*.css set softtabstop=2
-set shiftwidth=4
-autocmd BufRead,BufNewFile *.js,*.html,*.css set shiftwidth=2
-
-
-autocmd BufRead,BufNewFile *.js,*.html,*.css,*py,*md set textwidth=79
-autocmd BufRead,BufNewFile *.js,*.html,*.css,*py,*md set colorcolumn=+1        " highlight column after 'textwidth'
-
-
+" -- Colors --
 set background=dark
 colorscheme solarized
 
@@ -175,7 +176,6 @@ endfunction
 
 map <F12> :call ToggleSolarizedTheme()<CR>
 
-
 let g:lightline = {
       \ 'colorscheme': 'solarized',
       \ }
@@ -188,7 +188,7 @@ set noshowmode
 " / // / _ `/ |/ / _ `(_-</ __/ __/ / _ \/ __/
 " \___/\_,_/|___/\_,_/___/\__/_/ /_/ .__/\__/
 "                                 /_/
-"object/json syntax
+" For object/json syntax
 hi def link jsObjectKey Label
 
 imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
@@ -199,7 +199,6 @@ let g:user_emmet_settings = {
 \}
 
 let g:closetag_filetypes = 'html,js,javascript,jsx'
-
 
 " -- Linting, Auto Fix, Complation --
 let g:ale_linters = {'jsx': ['stylelint', 'eslint'], 'python': ['flake8']}
@@ -241,6 +240,11 @@ nnoremap <silent> <F2> :call LanguageClient#textDocument_rename()<CR>
 autocmd BufRead,BufNewFile *js,*py set signcolumn=yes " always open the gutter
 
 
+set cmdheight=2
+let g:echodoc#enable_at_startup = 1
+let g:echodoc#type = 'signature'
+
+
 autocmd BufEnter * call ncm2#enable_for_buffer()
 
 " IMPORTANTE: :help Ncm2PopupOpen for more information
@@ -270,7 +274,6 @@ nnoremap <C-g> :Rg<Cr>
 
 
 
-
 augroup CursorLine
     au!
     au VimEnter,WinEnter,BufWinEnter * setlocal cursorline
@@ -283,10 +286,8 @@ au TermOpen * setlocal nonumber laststatus=0
 tnoremap <leader><ESC> <C-\><C-n>
 let g:neoterm_autoscroll = 1
 
-
 " Tree style for netrw or vinegar
 let g:netrw_liststyle = 3
-
 
 " Python
 let g:python_highlight_all = 1

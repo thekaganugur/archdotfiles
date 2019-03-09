@@ -1,0 +1,6 @@
+#!/bin/sh
+
+color=$(grabc) &&
+echo $color | xclip -sel clip &&
+echo $color &&
+notify-send $color
