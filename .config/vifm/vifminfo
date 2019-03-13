@@ -20,7 +20,7 @@ b/media/
 
 # TUI:
 al
-q1
+q0
 v2
 ov
 m-1
@@ -28,446 +28,308 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/kgnugur/.nvim
-	plugged
-1
-d/home/kgnugur/.nvim/plugged
-	ncm2-path
-13
-d/home/kgnugur/.nvim
-	plugged
+d/home/kgnugur/Codes
+	personal-blog
 1
 d/home/kgnugur
-	.nv
-11
-d/home/kgnugur/.nv
-	GLCache
+	Codes
+1
+d/home/kgnugur/Codes
+	personal-blog
 1
 d/home/kgnugur
-	.node-gyp
-9
-d/home/kgnugur/.node-gyp
-	11.10.1
-1
-d/home/kgnugur/.node-gyp/11.10.1
-	include
-1
-d/home/kgnugur/.node-gyp/11.10.1/include
-	node
-1
-d/home/kgnugur/.node-gyp/11.10.1/include/node
-	..
-0
-d/home/kgnugur/.node-gyp/11.10.1/include
-	node
-1
-d/home/kgnugur/.node-gyp/11.10.1/include/node
-	..
-0
-d/home/kgnugur/.node-gyp/11.10.1/include
-	node
-1
-d/home/kgnugur/.node-gyp/11.10.1
-	include
-1
-d/home/kgnugur/.node-gyp
-	11.10.1
-1
-d/home/kgnugur
-	.local
-7
-d/home/kgnugur/.local
-	share
-1
-d/home/kgnugur/.local/share
-	vifm
-6
-d/home/kgnugur/.local/share/vifm
-	Trash
-1
-d/home/kgnugur/.local/share/vifm/Trash
-	002_.yarnrc
-43
-d/home/kgnugur/.local/share/vifm
-	..
-0
-d/home/kgnugur/.local/share
-	zathura
-8
-d/home/kgnugur/.local/share/zathura
-	..
-0
-d/home/kgnugur/.local/share
-	ranger
-5
-d/home/kgnugur/.local/share/ranger
-	history
+	Documents
 2
-d/home/kgnugur/.local/share
-	applications
-2
-d/home/kgnugur/.local/share/applications
-	..
-0
-d/home/kgnugur/.local/share
-	Trash
-1
-d/home/kgnugur/.local/share/Trash
-	files
-1
-d/home/kgnugur/.local/share/Trash/files
-	New folder
-1
-d/home/kgnugur/.local/share/Trash/files/New folder
-	..
-0
-d/home/kgnugur/.local/share/Trash/files
-	x
-2
-d/home/kgnugur/.local/share/Trash/files/x
-	..
-0
-d/home/kgnugur/.local/share/Trash/files
-	x
-2
-d/home/kgnugur/.local/share/Trash
-	info
-2
-d/home/kgnugur/.local/share/Trash/info
-	..
-0
-d/home/kgnugur/.local/share/Trash
-	files
-1
-d/home/kgnugur/.local/share/Trash/files
-	x
-2
-d/home/kgnugur/.local/share/Trash/files/x
-	..
-0
-d/home/kgnugur/.local/share/Trash/files
-	New folder
-1
-d/home/kgnugur/.local/share/Trash/files/New folder
-	..
-0
-d/home/kgnugur/.local/share/Trash/files
-	New folder
-1
-d/home/kgnugur/.local/share/Trash
-	files
-1
-d/home/kgnugur/.local/share
-	Trash
-1
-d/home/kgnugur/.local
-	share
-1
-d/home/kgnugur
-	.icons
-6
-d/home/kgnugur/.icons
-	..
-0
-d/home/kgnugur
-	.local
-7
-d/home/kgnugur/.local
-	share
-1
-d/home/kgnugur/.local/share
-	Trash
-1
-d/home/kgnugur/.local
-	share
-1
-d/home/kgnugur
-	.local
-7
-d/home/kgnugur/.local
-	share
-1
-d/home/kgnugur/.local/share
-	vifm
-6
-d/home/kgnugur/.local/share/vifm
-	Trash
-1
-d/home/kgnugur/.local/share/vifm/Trash
-	000_.getkeys
-1
-d/home/kgnugur/.local/share/vifm
-	Trash
-1
-d/home/kgnugur/.local/share/vifm/Trash
-	
-1
-d/home/kgnugur/.local/share/vifm
-	..
-0
-d/home/kgnugur/.local/share
-	vifm
-6
-d/home/kgnugur/.local/share/vifm
-	..
-0
-d/home/kgnugur/.local/share
-	vifm
-6
-d/home/kgnugur/.local
-	share
-1
-d/home/kgnugur
-	.icons
-6
-d/home/kgnugur/.icons
-	..
-0
-d/home/kgnugur
-	.gnupg
-5
-d/home/kgnugur/.gnupg
-	..
-0
-d/home/kgnugur
-	.github
-4
-d/home/kgnugur/.github
-	..
-0
-d/home/kgnugur
-	.config
-3
-d/home/kgnugur/.config
-	mimeapps.list
-28
-d/home/kgnugur
-	.calcurse
-2
-d/home/kgnugur/.calcurse
-	..
-0
-d/home/kgnugur
-	.calcurse
-2
-d/home/kgnugur/.calcurse
-	..
-0
-d/home/kgnugur
-	.cache
-1
-d/home/kgnugur/.cache
-	..
-0
-d/home/kgnugur
-	.gnupg
-5
-d/home/kgnugur/.gnupg
+d/home/kgnugur/Documents
 	..
 0
 d/home/kgnugur
 	Downloads
-18
+3
 d/home/kgnugur/Downloads
 	..
 0
 d/home/kgnugur
-	.config
-3
-d/home/kgnugur/.config
-	pcmanfm
-19
-d/home/kgnugur/.config/pcmanfm
-	default
+	Codes
 1
-d/home/kgnugur/.config/pcmanfm/default
-	pcmanfm.conf
+d/media
+	Seagate
 1
-d/home/kgnugur/.config/pcmanfm
-	default
-1
-d/home/kgnugur/.config
-	google-chrome
-8
-d/home/kgnugur/.config/google-chrome
-	..
-0
-d/home/kgnugur/.config
-	xarchiver
-22
-d/home/kgnugur/.config/xarchiver
-	xarchiverrc
-1
-d/home/kgnugur/.config
-	zathura
-25
+d/media/Seagate
+	Steam
+7
 d/home/kgnugur
-	Documents
-2
-d/home/kgnugur/Documents
-	.zshrc
-2
-d/home/kgnugur
-	.config
-3
-d/home/kgnugur/.config
-	zathura
-26
-d/home/kgnugur
-	.config
-3
-d/home/kgnugur/.config
-	zathura
-26
-d/home/kgnugur
-	Documents
-2
-d/home/kgnugur/Documents
-	.zshrc
-2
-d/home/kgnugur
-	.zshenv
-34
-
-# Right window history (oldest to newest):
-D/home/kgnugur/.scripts/cron
-	cronbat
-2
-D/home/kgnugur/.scripts
-	tools
-4
-D/home/kgnugur/.scripts/tools
-	transadd
-21
-D/home/kgnugur/.scripts
-	..
-0
-D/home/kgnugur
-	.screenlayout
-9
-D/home/kgnugur/.screenlayout
-	..
-0
-D/home/kgnugur
-	.nvim
-6
-D/home/kgnugur/.nvim
-	plugged
+	Codes
 1
-D/home/kgnugur
-	.config
-3
-D/home/kgnugur/.config
-	.getkeys
-1
-D/home/kgnugur/.config/.getkeys
-	..
-0
-D/home/kgnugur/.config
-	.getkeys
-1
-D/home/kgnugur/.config/.getkeys
-	ranger
-8
-D/home/kgnugur/.config
-	fontconfig
-4
-D/home/kgnugur/.config/fontconfig
-	..
-0
-D/home/kgnugur/.config
-	gconf
-5
-D/home/kgnugur/.config/gconf
-	..
-0
-D/home/kgnugur/.config
-	i3
-9
-D/home/kgnugur/.config/i3
-	config
-1
-D/home/kgnugur/.config
-	i3blocks
-10
-D/home/kgnugur/.config/i3blocks
-	..
-0
-D/home/kgnugur/.config
-	libfm
-11
-D/home/kgnugur/.config/libfm
-	..
-0
-D/home/kgnugur/.config
-	pcmanfm
-16
-D/home/kgnugur/.config/pcmanfm
-	..
-0
-D/home/kgnugur/.config
-	pulse
-17
-D/home/kgnugur/.config/pulse
-	..
-0
-D/home/kgnugur/.config
-	ranger
-18
-D/home/kgnugur/.config/ranger
-	..
-0
-D/home/kgnugur/.config
-	..
-0
-D/home/kgnugur
-	.config
-3
-D/home/kgnugur/.config
-	i3
-9
-D/home/kgnugur
-	.github
-4
-D/home
+d/home
 	kgnugur
 1
-D/home/kgnugur
-	.scripts
-14
-D/home/kgnugur/.scripts
-	i3cmds
+d/
+	home
+4
+d/home
+	kgnugur
+1
+d/home/kgnugur
+	Documents
 2
-D/home/kgnugur/.scripts/i3cmds
-	winresize
-11
-D/home/kgnugur/.scripts
-	statusbar
-3
-D/home/kgnugur/.scripts/statusbar
+d/home/kgnugur/Documents
 	..
 0
-D/home/kgnugur/.scripts
-	tools
-4
-D/home/kgnugur/.scripts/tools
-	dmenusessionmanager
-6
-D/home/kgnugur
+d/home/kgnugur
+	Documents
+2
+d/home/kgnugur/Documents
+	20180801_174638.jpg
+1
+d/home/kgnugur
+	Downloads
+3
+d/home/kgnugur/Downloads
+	..
+0
+d/home/kgnugur
+	Documents
+2
+d/home/kgnugur/Documents
+	20190203_195133.jpg
+3
+d/home/kgnugur
+	Codes
+1
+d/home/kgnugur/Codes
+	personal-blog
+1
+d/home/kgnugur
+	Documents
+2
+d/home/kgnugur/Documents
+	20190203_195133.jpg
+3
+d/home/kgnugur
+	Downloads
+3
+d/home/kgnugur/Downloads
+	..
+0
+d/home/kgnugur
+	Codes
+1
+d/home/kgnugur/Codes
+	personal-blog
+1
+d/home/kgnugur
+	Codes
+1
+d/home/kgnugur/Codes
+	voidrice
+3
+d/home/kgnugur/Codes/voidrice
+	.config
+1
+d/home/kgnugur/Codes/voidrice/.config
+	i3blocks
+8
+d/home/kgnugur/Codes/voidrice
 	.scripts
-14
-D/home/kgnugur/.scripts
+5
+d/home/kgnugur/Codes/voidrice/.scripts
+	i3cmds
+2
+d/home/kgnugur/Codes/voidrice/.scripts/i3cmds
+	..
+0
+d/home/kgnugur/Codes/voidrice/.scripts
+	i3cmds
+2
+d/home/kgnugur/Codes/voidrice
+	.scripts
+5
+d/home/kgnugur/Codes
+	voidrice
+3
+d/home/kgnugur
+	Codes
+20
+d/home/kgnugur/Codes
+	voidrice
+3
+d/home/kgnugur/Codes/voidrice
+	.scripts
+5
+d/home/kgnugur/Codes/voidrice/.scripts
+	i3cmds
+2
+d/home/kgnugur/Codes/voidrice/.scripts/i3cmds
+	dmenuunicode
+10
+d/home/kgnugur/Codes/voidrice/.scripts
 	tools
 4
-D/home/kgnugur/.scripts/tools
-	dmenusessionmanager
+d/home/kgnugur/Codes/voidrice/.scripts/tools
+	dmenupass
+3
+d/home/kgnugur
+	.scripts
+13
+d/home/kgnugur/.scripts
+	dmenu_websearch
+7
+d/home/kgnugur
+	.scripts
+13
+d/home/kgnugur/.scripts
+	tools
+4
+d/home/kgnugur/.scripts/tools
+	dmenu_websearch
+5
+d/home/kgnugur/.scripts
+	pulsemixer
+5
+d/home/kgnugur
+	clipmenu
+4
+d/home/kgnugur/clipmenu
+	clipmenu
 6
-D/home/kgnugur/.scripts
+d/home/kgnugur/.scripts
+	i3cmds
+2
+d/home/kgnugur/.scripts/i3cmds
+	camtoggle
+3
+d/home/kgnugur/.scripts
 	statusbar
 3
-D/home/kgnugur/.scripts/statusbar
+d/home/kgnugur/.scripts/statusbar
 	dwmstatus
 1
+d/home/kgnugur/.scripts
+	dbrowse
+5
+d/home/kgnugur/Codes/dwm
+	config.h
+7
+d/home/kgnugur/.scripts/dmenu
+	dmenuwebsearch
+9
+d/home/kgnugur/Codes/dwm
+	config.h
+7
+d/home/kgnugur/Codes
+	voidrice
+4
+d/home/kgnugur
+	.config
+3
+d/home/kgnugur/.config
+	mimeapps_.list
+29
+d/home/kgnugur/Codes
+	voidrice
+4
+d/home/kgnugur
+	.config
+3
+d/home/kgnugur/.config
+	mimeapps_.list
+21
+d/home/kgnugur
+	.config
+3
+d/home/kgnugur/.config
+	mimeapps_.list
+27
+d/home/kgnugur/.scripts/dmenu
+	dmenumount
+3
+d/home/kgnugur
+	.config
+3
+d/home/kgnugur/.config
+	mimeapps_.list
+30
+d/home/kgnugur
+	Codes
+1
+d/home/kgnugur/Codes
+	..
+0
+d/home/kgnugur
+	Documents
+2
+d/home/kgnugur/Documents
+	20180801_174638.jpg
+1
+d/home/kgnugur
+	Downloads
+3
+d/home/kgnugur/Downloads
+	..
+0
+d/home/kgnugur
+	Downloads
+3
+d/home/kgnugur/Downloads
+	..
+0
+d/home/kgnugur
+	Documents
+2
+d/home/kgnugur/Documents
+	20180801_174638.jpg
+1
+d/home/kgnugur
+	Codes
+1
+d/home/kgnugur/Codes
+	..
+0
+d/home/kgnugur
+	Documents
+2
+d/home/kgnugur/Documents
+	20180801_174638.jpg
+1
+d/home/kgnugur
+	Documents
+2
+d/home/kgnugur/Documents
+	20180801_174638.jpg
+1
+d/home/kgnugur
+	Documents
+2
+d/home/kgnugur/Documents
+	Code-Notes
+1
+d/home/kgnugur/Documents/Code-Notes
+	VIA
+1
+d/home/kgnugur/LanguageClient-neovim
+	autoload
+1
+d/home/kgnugur
+	LanguageClient-neovim
+4
+d/home/kgnugur/LanguageClient-neovim
+	autoload
+1
+d/home/kgnugur
+	dotfiles
+5
+d/home/kgnugur/dotfiles
+	..
+0
+d/home/kgnugur
+	resume
+6
+d/home/kgnugur/resume
+	..
+0
+
+# Right window history (oldest to newest):
 D/home/kgnugur
 	.config
 3
@@ -630,8 +492,148 @@ D/run/user/1000/clipmenu.5.kgnugur
 D/home/kgnugur
 	..
 0
+D/home/kgnugur/clipmenu
+	
+0
+D/home/kgnugur
+	.config
+3
+D/home/kgnugur/.config
+	zathura
+26
+D/home/kgnugur
+	.scripts
+12
+D/home/kgnugur/.scripts
+	statusbar
+3
+D/home/kgnugur/.scripts/statusbar
+	dwmstatus
+1
+D/home/kgnugur/.scripts
+	tools
+4
+D/home/kgnugur/.scripts/tools
+	linkhandler
+13
+D/home/kgnugur/.scripts
+	linkhandle
+5
+D/home/kgnugur/Codes/dwm
+	README
+5
+D/home/kgnugur/clipmenu
+	..
+0
+D/home/kgnugur
+	.scripts
+12
+D/home/kgnugur/.scripts
+	clipmenu-url
+5
+D/home/kgnugur
+	.scripts
+12
+D/home/kgnugur/.scripts
+	tools
+4
+D/home/kgnugur/.scripts/tools
+	clipmenu-url
+1
+D/home/kgnugur/.scripts
+	tools
+4
+D/home/kgnugur/.scripts/tools
+	opout
+15
+D/home/kgnugur
+	Codes
+17
+D/home/kgnugur/Codes
+	voidrice
+5
+D/home/kgnugur/Codes/voidrice
+	.scripts
+5
+D/home/kgnugur/Codes/voidrice/.scripts
+	tools
+4
+D/home/kgnugur/Codes/voidrice/.scripts/tools
+	..
+0
+D/home/kgnugur/Codes/voidrice/.scripts
+	statusbar
+3
+D/home/kgnugur/Codes/voidrice/.scripts/statusbar
+	..
+0
+D/home/kgnugur/Codes/voidrice/.scripts
+	statusbar
+3
+D/home/kgnugur
+	.ssh
+14
+D/home/kgnugur/.ssh
+	known_hosts
+2
+D/home/kgnugur
+	.scripts
+13
+D/home/kgnugur/Codes
+	voidrice
+3
+D/home/kgnugur
+	.scripts
+13
+D/home/kgnugur/.scripts
+	tools
+4
+D/home/kgnugur/Codes/dwm
+	README
+5
+D/home/kgnugur
+	.scripts
+13
+D/home/kgnugur/Codes/dwm
+	README
+5
+D/home/kgnugur
+	.scripts
+13
+D/home/kgnugur/.scripts/dmenu
+	..
+0
+D/home/kgnugur
+	.scripts
+13
+D/home/kgnugur/LanguageClient-neovim
+	ci
+8
+D/home/kgnugur
+	.nvim
+10
+D/home/kgnugur/.nvim
+	plugged
+1
+D/home/kgnugur/.nvim/plugged
+	LanguageClient-neovim
+1
+D/home/kgnugur/.nvim/plugged/LanguageClient-neovim
+	autoload
+1
+D/home/kgnugur
+	.nvim
+10
+D/home/kgnugur/.nvim
+	..
+0
+D/home/kgnugur
+	..
+0
 
 # Command line history (oldest to newest):
+:mkdir dmenu
+:restart
 :!addr2line
 :d"
 :jk
@@ -652,16 +654,24 @@ D/home/kgnugur
 :bmark ~
 :bmark
 :bmark Codes
-:bmgo
 :bmark media
-:bmarks
 :rename asd
 :::::
-:view
 :w
+:view
+:bmgo
+:sxiv *.jpg
+:!sxiv *.jpg
+:bmarks
+:.,.+0
+:mkdir Code Notes
+:touch VIA
 :q
 
 # Search history (oldest to newest):
+/dmenu
+/google
+/duc
 /s
 /q
 /sessi
@@ -670,19 +680,46 @@ D/home/kgnugur
 /short
 /bash
 /bas
+/link
+/hand
 
 # Prompt history (oldest to newest):
+pdmenubrowse
+pdmenuwebsearch
+p_linkhandle
+po
+plinkhandle
 pautostartttt
 pmimeapps.listt
-pmimeapps.list
 psessionManager
 pdmenusessionmanager
+pclipmenu-web
+pmimeapps.list
+pmimeapps_.list
+pCode-Notes
 
 # Local filter history (oldest to newest):
 
 # Registers:
-""/home/kgnugur/Documents/.zshenv
-""/home/kgnugur/Documents/.zshrc
+""/home/kgnugur/LanguageClient-neovim/autoload
+""/home/kgnugur/LanguageClient-neovim/bin
+""/home/kgnugur/LanguageClient-neovim/ci
+""/home/kgnugur/LanguageClient-neovim/doc
+""/home/kgnugur/LanguageClient-neovim/plugin
+""/home/kgnugur/LanguageClient-neovim/rplugin
+""/home/kgnugur/LanguageClient-neovim/src
+""/home/kgnugur/LanguageClient-neovim/tests
+""/home/kgnugur/LanguageClient-neovim/Cargo.lock
+""/home/kgnugur/LanguageClient-neovim/Cargo.toml
+""/home/kgnugur/LanguageClient-neovim/INSTALL.md
+""/home/kgnugur/LanguageClient-neovim/LICENSE.txt
+""/home/kgnugur/LanguageClient-neovim/Makefile
+""/home/kgnugur/LanguageClient-neovim/README.md
+""/home/kgnugur/LanguageClient-neovim/TODO.md
+""/home/kgnugur/LanguageClient-neovim/build.rs
+""/home/kgnugur/LanguageClient-neovim/install.ps1
+""/home/kgnugur/LanguageClient-neovim/install.sh
+""/home/kgnugur/LanguageClient-neovim/min-vimrc.vim
 
 # Directory stack (oldest to newest):
 
@@ -893,11 +930,95 @@ t/home/kgnugur/.local/share/vifm/Trash/000_.zshenv
 	/home/kgnugur/.zshenv
 t/home/kgnugur/.local/share/vifm/Trash/000_.zshrc.pre-oh-my-zsh
 	/home/kgnugur/.zshrc.pre-oh-my-zsh
+t/home/kgnugur/.local/share/vifm/Trash/000_clipmenu-web
+	/home/kgnugur/.scripts/clipmenu-web
+t/home/kgnugur/.local/share/vifm/Trash/000_clipmenu-url
+	/home/kgnugur/.scripts/clipmenu-url
+t/home/kgnugur/.local/share/vifm/Trash/000_asd
+	/home/kgnugur/asd
+t/home/kgnugur/.local/share/vifm/Trash/000_bgs
+	/home/kgnugur/bgs
+t/home/kgnugur/.local/share/vifm/Trash/000_spt
+	/home/kgnugur/spt
+t/home/kgnugur/.local/share/vifm/Trash/000_index.jpg
+	/home/kgnugur/Downloads/index.jpg
+t/home/kgnugur/.local/share/vifm/Trash/000_nodedev
+	/home/kgnugur/Documents/nodedev
+t/home/kgnugur/.local/share/vifm/Trash/000_blur-business-close-up-270557(1).jpg
+	/home/kgnugur/Downloads/blur-business-close-up-270557(1).jpg
+t/home/kgnugur/.local/share/vifm/Trash/000_blur-business-close-up-270557.jpg
+	/home/kgnugur/Downloads/blur-business-close-up-270557.jpg
+t/home/kgnugur/.local/share/vifm/Trash/000_pexels-photo-247791.png
+	/home/kgnugur/Downloads/pexels-photo-247791.png
+t/home/kgnugur/.local/share/vifm/Trash/000_pexels-photo-270557.jpeg
+	/home/kgnugur/Downloads/pexels-photo-270557.jpeg
+t/home/kgnugur/.local/share/vifm/Trash/000__linkhandl
+	/home/kgnugur/.scripts/_linkhandl
+t/home/kgnugur/.local/share/vifm/Trash/000__linkhandle
+	/home/kgnugur/.scripts/_linkhandle
+t/home/kgnugur/.local/share/vifm/Trash/000_xdg-open
+	/home/kgnugur/xdg-open
+t/home/kgnugur/.local/share/vifm/Trash/000_200.webp
+	/home/kgnugur/Downloads/200.webp
+t/home/kgnugur/.local/share/vifm/Trash/000_Notes
+	/home/kgnugur/Documents/Notes
+t/home/kgnugur/.local/share/vifm/Trash/000_.circleci
+	/home/kgnugur/.nvim/plugged/LanguageClient-neovim/.circleci
+t/home/kgnugur/.local/share/vifm/Trash/000_.git
+	/home/kgnugur/.nvim/plugged/LanguageClient-neovim/.git
+t/home/kgnugur/.local/share/vifm/Trash/000_.github
+	/home/kgnugur/.nvim/plugged/LanguageClient-neovim/.github
+t/home/kgnugur/.local/share/vifm/Trash/000_.vim
+	/home/kgnugur/.nvim/plugged/LanguageClient-neovim/.vim
+t/home/kgnugur/.local/share/vifm/Trash/000_.vscode
+	/home/kgnugur/.nvim/plugged/LanguageClient-neovim/.vscode
+t/home/kgnugur/.local/share/vifm/Trash/000_autoload
+	/home/kgnugur/.nvim/plugged/LanguageClient-neovim/autoload
+t/home/kgnugur/.local/share/vifm/Trash/000_bin
+	/home/kgnugur/.nvim/plugged/LanguageClient-neovim/bin
+t/home/kgnugur/.local/share/vifm/Trash/000_ci
+	/home/kgnugur/.nvim/plugged/LanguageClient-neovim/ci
+t/home/kgnugur/.local/share/vifm/Trash/000_doc
+	/home/kgnugur/.nvim/plugged/LanguageClient-neovim/doc
+t/home/kgnugur/.local/share/vifm/Trash/000_plugin
+	/home/kgnugur/.nvim/plugged/LanguageClient-neovim/plugin
+t/home/kgnugur/.local/share/vifm/Trash/000_rplugin
+	/home/kgnugur/.nvim/plugged/LanguageClient-neovim/rplugin
+t/home/kgnugur/.local/share/vifm/Trash/000_src
+	/home/kgnugur/.nvim/plugged/LanguageClient-neovim/src
+t/home/kgnugur/.local/share/vifm/Trash/000_tests
+	/home/kgnugur/.nvim/plugged/LanguageClient-neovim/tests
+t/home/kgnugur/.local/share/vifm/Trash/000_.gitignore
+	/home/kgnugur/.nvim/plugged/LanguageClient-neovim/.gitignore
+t/home/kgnugur/.local/share/vifm/Trash/000_.travis.yml
+	/home/kgnugur/.nvim/plugged/LanguageClient-neovim/.travis.yml
+t/home/kgnugur/.local/share/vifm/Trash/000_Cargo.lock
+	/home/kgnugur/.nvim/plugged/LanguageClient-neovim/Cargo.lock
+t/home/kgnugur/.local/share/vifm/Trash/000_Cargo.toml
+	/home/kgnugur/.nvim/plugged/LanguageClient-neovim/Cargo.toml
+t/home/kgnugur/.local/share/vifm/Trash/000_INSTALL.md
+	/home/kgnugur/.nvim/plugged/LanguageClient-neovim/INSTALL.md
+t/home/kgnugur/.local/share/vifm/Trash/000_LICENSE.txt
+	/home/kgnugur/.nvim/plugged/LanguageClient-neovim/LICENSE.txt
+t/home/kgnugur/.local/share/vifm/Trash/000_Makefile
+	/home/kgnugur/.nvim/plugged/LanguageClient-neovim/Makefile
+t/home/kgnugur/.local/share/vifm/Trash/000_README.md
+	/home/kgnugur/.nvim/plugged/LanguageClient-neovim/README.md
+t/home/kgnugur/.local/share/vifm/Trash/000_TODO.md
+	/home/kgnugur/.nvim/plugged/LanguageClient-neovim/TODO.md
+t/home/kgnugur/.local/share/vifm/Trash/000_build.rs
+	/home/kgnugur/.nvim/plugged/LanguageClient-neovim/build.rs
+t/home/kgnugur/.local/share/vifm/Trash/000_install.ps1
+	/home/kgnugur/.nvim/plugged/LanguageClient-neovim/install.ps1
+t/home/kgnugur/.local/share/vifm/Trash/000_install.sh
+	/home/kgnugur/.nvim/plugged/LanguageClient-neovim/install.sh
+t/home/kgnugur/.local/share/vifm/Trash/000_min-vimrc.vim
+	/home/kgnugur/.nvim/plugged/LanguageClient-neovim/min-vimrc.vim
 
 # State:
 f
 i1
-[.0
+[.1
 [F
 F
 I1

@@ -30,9 +30,9 @@ print_power() {
     battery=$(cat /sys/class/power_supply/BAT1/capacity)
 
     if [ $status == 1 ]; then
-        echo "${battery}c"
+        echo "${battery}%+"
     else
-        echo "${battery}d"
+        echo "${battery}%-"
     fi
 }
 

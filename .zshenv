@@ -1,12 +1,14 @@
 # Adds `~/.scripts` and all subdirectories to $PATH
 export PATH="$(du $HOME/.scripts/ | cut -f2 | tr '\n' ':')$PATH"
 
-export EDITOR="nvim"
 export TERMINAL="st"
-export BROWSER="firefox"
+export EDITOR="nvim"
 export READER="zathura"
 export FILE="ranger"
-export SUDO_ASKPASS="$HOME/.scripts/tools/dmenupass"
+export VIEWER="sxiv"
+export BROWSER="firefox"
+export SEARCHENGINE="google"
+# export SUDO_ASKPASS="$HOME/.scripts/tools/dmenupass"
 # export FZF_DEFAULT_COMMAND='rg --files --hidden --follow'
 
 
@@ -16,7 +18,6 @@ export SUDO_ASKPASS="$HOME/.scripts/tools/dmenupass"
  alias r="ranger"
  alias sr="sudo ranger"
  alias vf="vifm"
- alias svf="sudo vifm"
  alias svf="sudo vifm"
  alias ka="killall"
  alias p="sudo pacman"
@@ -28,8 +29,6 @@ export SUDO_ASKPASS="$HOME/.scripts/tools/dmenupass"
 
 
 # Adding color
- alias ls='ls -hN --color=auto --group-directories-first'
- alias grep="grep --color=auto"
- alias diff="diff --color=auto"
-
-
+#  alias ls='ls -hN --color=auto --group-directories-first'
+#  alias grep="grep --color=auto"
+#  alias diff="diff --color=auto"

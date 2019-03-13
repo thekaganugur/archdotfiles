@@ -14,7 +14,7 @@ dunst &
 compton &
 remaps
 unclutter &
-# clipmenud &
+clipmenud &
 
 
 while true; do
