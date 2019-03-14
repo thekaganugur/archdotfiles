@@ -28,90 +28,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/kgnugur/Codes
-	personal-blog
-1
-d/home/kgnugur
-	Codes
-1
-d/home/kgnugur/Codes
-	personal-blog
-1
-d/home/kgnugur
-	Documents
-2
-d/home/kgnugur/Documents
-	..
-0
-d/home/kgnugur
-	Downloads
-3
-d/home/kgnugur/Downloads
-	..
-0
-d/home/kgnugur
-	Codes
-1
-d/media
-	Seagate
-1
-d/media/Seagate
-	Steam
-7
-d/home/kgnugur
-	Codes
-1
-d/home
-	kgnugur
-1
-d/
-	home
-4
-d/home
-	kgnugur
-1
-d/home/kgnugur
-	Documents
-2
-d/home/kgnugur/Documents
-	..
-0
-d/home/kgnugur
-	Documents
-2
-d/home/kgnugur/Documents
-	20180801_174638.jpg
-1
-d/home/kgnugur
-	Downloads
-3
-d/home/kgnugur/Downloads
-	..
-0
-d/home/kgnugur
-	Documents
-2
-d/home/kgnugur/Documents
-	20190203_195133.jpg
-3
-d/home/kgnugur
-	Codes
-1
-d/home/kgnugur/Codes
-	personal-blog
-1
-d/home/kgnugur
-	Documents
-2
-d/home/kgnugur/Documents
-	20190203_195133.jpg
-3
-d/home/kgnugur
-	Downloads
-3
-d/home/kgnugur/Downloads
-	..
-0
 d/home/kgnugur
 	Codes
 1
@@ -328,20 +244,92 @@ d/home/kgnugur
 d/home/kgnugur/resume
 	..
 0
+d/home/kgnugur/Codes/Kata
+	Mumbling.js
+1
+d/home/kgnugur
+	Downloads
+3
+d/home/kgnugur/Downloads
+	..
+0
+d/home/kgnugur
+	Documents
+2
+d/home/kgnugur/Documents
+	..
+0
+d/home/kgnugur
+	Documents
+2
+d/home/kgnugur/Documents
+	Becoming a Supple Leopard - The Ultimate Guide to Resolving Pain, Preventing Injury and Optimizing Athletic Performance - 2nd Edition (2015).epub
+5
+d/home/kgnugur
+	Codes
+1
+d/home/kgnugur/Codes
+	..
+0
+d/home/kgnugur
+	Codes
+1
+d/home/kgnugur/Codes
+	dwm
+2
+d/home/kgnugur/resume
+	Résumé.tex
+1
+d/home/kgnugur
+	resume
+5
+d/home/kgnugur/resume
+	Résumé.pdf
+1
+d/home/kgnugur
+	Codes
+1
+d/home/kgnugur/Codes
+	dwm
+2
+d/home/kgnugur/Codes/dwm
+	config.h
+7
+d/home/kgnugur/Codes
+	via-frontend
+4
+d/home/kgnugur/Codes/via-frontend
+	src
+4
+d/home/kgnugur/Codes/via-frontend/src
+	store
+4
+d/home/kgnugur/Codes/via-frontend/src/store
+	..
+0
+d/home/kgnugur/Codes/via-frontend/src
+	components
+2
+d/home/kgnugur/Codes/via-frontend/src/components
+	..
+0
+d/home/kgnugur/Codes/via-frontend/src
+	components
+2
+d/home/kgnugur/Codes/via-frontend
+	README.md
+5
+d/home/kgnugur/Codes
+	Kata
+1
+d/home/kgnugur
+	resume
+5
+d/home/kgnugur/resume
+	Résumé.pdf
+1
 
 # Right window history (oldest to newest):
-D/home/kgnugur
-	.config
-3
-D/home
-	kgnugur
-1
-D/home/kgnugur
-	.scripts
-14
-D/home/kgnugur/.scripts
-	tools
-4
 D/home/kgnugur/.scripts/tools
 	dmenusessionmanager
 6
@@ -630,6 +618,18 @@ D/home/kgnugur/.nvim
 D/home/kgnugur
 	..
 0
+D/home/kgnugur/Codes/Kata
+	..
+0
+D/home/kgnugur
+	..
+0
+D/home/kgnugur/resume
+	..
+0
+D/home/kgnugur
+	..
+0
 
 # Command line history (oldest to newest):
 :mkdir dmenu
@@ -697,29 +697,12 @@ pclipmenu-web
 pmimeapps.list
 pmimeapps_.list
 pCode-Notes
+pMumbling.js
 
 # Local filter history (oldest to newest):
 
 # Registers:
-""/home/kgnugur/LanguageClient-neovim/autoload
-""/home/kgnugur/LanguageClient-neovim/bin
-""/home/kgnugur/LanguageClient-neovim/ci
-""/home/kgnugur/LanguageClient-neovim/doc
-""/home/kgnugur/LanguageClient-neovim/plugin
-""/home/kgnugur/LanguageClient-neovim/rplugin
-""/home/kgnugur/LanguageClient-neovim/src
-""/home/kgnugur/LanguageClient-neovim/tests
-""/home/kgnugur/LanguageClient-neovim/Cargo.lock
-""/home/kgnugur/LanguageClient-neovim/Cargo.toml
-""/home/kgnugur/LanguageClient-neovim/INSTALL.md
-""/home/kgnugur/LanguageClient-neovim/LICENSE.txt
-""/home/kgnugur/LanguageClient-neovim/Makefile
-""/home/kgnugur/LanguageClient-neovim/README.md
-""/home/kgnugur/LanguageClient-neovim/TODO.md
-""/home/kgnugur/LanguageClient-neovim/build.rs
-""/home/kgnugur/LanguageClient-neovim/install.ps1
-""/home/kgnugur/LanguageClient-neovim/install.sh
-""/home/kgnugur/LanguageClient-neovim/min-vimrc.vim
+""/home/kgnugur/.local/share/vifm/Trash/000_texput.log
 
 # Directory stack (oldest to newest):
 
@@ -1014,6 +997,12 @@ t/home/kgnugur/.local/share/vifm/Trash/000_install.sh
 	/home/kgnugur/.nvim/plugged/LanguageClient-neovim/install.sh
 t/home/kgnugur/.local/share/vifm/Trash/000_min-vimrc.vim
 	/home/kgnugur/.nvim/plugged/LanguageClient-neovim/min-vimrc.vim
+t/home/kgnugur/.local/share/vifm/Trash/000_dotfiles
+	/home/kgnugur/dotfiles
+t/home/kgnugur/.local/share/vifm/Trash/000_Résumé.pdf
+	/home/kgnugur/resume/Résumé.pdf
+t/home/kgnugur/.local/share/vifm/Trash/000_texput.log
+	/home/kgnugur/resume/texput.log
 
 # State:
 f

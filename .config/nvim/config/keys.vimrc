@@ -12,9 +12,9 @@ map <C-l> <C-w>l
 map <Leader><Leader> <C-^>
 
 " Compile document with custom script
-map <leader>c :w! \| !compiler <c-r>%<CR><CR>
+map <leader>c :w! \|  !compiler %<CR>
 " Open corresponding .pdf/.html or preview
-map <leader>p :!opout <c-r>%<CR><CR>
+map <leader>p :!opout %<CR><CR>
 
 " Use urlscan to choose and open a url:
 map <leader>u :w<Home> !urlscan -r 'linkhandler {}'<CR>

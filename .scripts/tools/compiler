@@ -1,10 +1,5 @@
 #!/bin/sh
-# This script will compile or run another finishing operation on a document. I
-# have this script run via vim.
-#
-# Compiles .tex. groff (.mom, .ms), .rmd, .md.
 # Opens .sent files as sent presentations.
-# Runs scripts based on extention or shebang
 
 file=$(readlink -f "$1")
 dir=$(dirname "$file")
@@ -12,7 +7,7 @@ base="${file%.*}"
 
 cd "$dir" || exit
 
-textype() { \
+textype() {
 	command="pdflatex"
 	( sed 5q "$file" | grep -i -q 'xelatex' ) && command="xelatex"
 	$command --output-directory="$dir" "$base" &&
@@ -22,16 +17,27 @@ textype() { \
 	$command --output-directory="$dir" "$base"
 	}
 
+# upto () {
+#     if [ -z "$1" ]; then
+#         return
+#     fi
+#     local upto=$1
+#     cd "${PWD/\/$upto\/*//$upto}"
+# }
+
 case "$file" in
-	*\.ms) refer -PS -e "$file" | groff -me -ms -kejpt -T pdf > "$base".pdf ;;
-	*\.mom) refer -PS -e "$file" | groff -mom -kejpt -T pdf > "$base".pdf ;;
-	*\.rmd) echo "require(rmarkdown); render('$file')" | R -q --vanilla ;;
-	*\.tex) textype "$file" ;;
-	*\.md) pandoc "$file" --pdf-engine=xelatex -o "$base".pdf ;;
+	*.tex) textype "$file" ;;
+	*.md) pandoc "$file" --pdf-engine=xelatex -o "$base".pdf ;;
+	*.py) python "$file" ;;
 	*config.h) sudo make install ;;
-        *\.c) cc "$file" -o "$base" && "$base" ;;
-	*\.py) python "$file" ;;
-	*\.go) go run "$file" ;;
-	*\.sent) setsid sent "$file" 2>/dev/null & ;;
-	*) sed 1q "$file" | grep "^#!/" | sed "s/^#!//" | xargs -r -I % "$file" ;;
+
+    # *.js) upto src && cd .. && grep -q "\"start\"" package.json
+
+	# *\.ms) refer -PS -e "$file" | groff -me -ms -kejpt -T pdf > "$base".pdf ;;
+    #     *\.c) cc "$file" -o "$base" && "$base" ;;
+	# *\.go) go run "$file" ;;
+	# *\.sent) setsid sent "$file" 2>/dev/null & ;;
+	# *) sed 1q "$file" | grep "^#!/" | sed "s/^#!//" | xargs -r -I % "$file" ;;
+	# *\.mom) refer -PS -e "$file" | groff -mom -kejpt -T pdf > "$base".pdf ;;
+	# *\.rmd) echo "require(rmarkdown); render('$file')" | R -q --vanilla ;;
 esac
