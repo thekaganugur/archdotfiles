@@ -14,3 +14,4 @@ application/json=nvim-usercreated-1.desktop;
 application/javascript=nvim-usercreated-1.desktop;
 text/x-python=nvim.desktop;
 text/css=nvim.desktop;
+video/x-matroska=mpv.desktop;

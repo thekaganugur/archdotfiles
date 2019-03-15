@@ -26,10 +26,11 @@ textype() {
 # }
 
 case "$file" in
-	*.tex) textype "$file" ;;
-	*.md) pandoc "$file" --pdf-engine=xelatex -o "$base".pdf ;;
-	*.py) python "$file" ;;
 	*config.h) sudo make install ;;
+	*.md) pandoc "$file" --pdf-engine=xelatex -o "$base".pdf ;;
+	*.tex) textype "$file" ;;
+	*.py) python "$file" ;;
+    *.js) node "$file" ;;
 
     # *.js) upto src && cd .. && grep -q "\"start\"" package.json
 
