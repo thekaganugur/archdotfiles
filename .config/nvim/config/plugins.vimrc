@@ -50,12 +50,12 @@ let g:LanguageClient_serverCommands = {
 let  g:LanguageClient_useVirtualText = 0
 
 " - NCM2 -
-autocmd BufEnter * call ncm2#enable_for_buffer()
-" :help Ncm2PopupOpen for more information
-set completeopt=noinsert,menuone,noselect
-" Suppress the annoying 'match x of y', 'The only match' and 'Pattern not
-" found' messages
-set shortmess+=c
+" autocmd BufEnter * call ncm2#enable_for_buffer()
+" " :help Ncm2PopupOpen for more information
+" set completeopt=noinsert,menuone,noselect
+" " Suppress the annoying 'match x of y', 'The only match' and 'Pattern not
+" " found' messages
+" set shortmess+=c
 
 " - Fzf Rg -
 command! -bang -nargs=* Find call fzf#vim#grep( 'rg --column --line-number --no-heading --fixed-strings --ignore-case --hidden --follow --color "always" '.shellescape(<q-args>), 1, <bang>0)
@@ -66,7 +66,3 @@ let g:netrw_liststyle = 3
 
 " Python
 let g:python_highlight_all = 1
-
-" set cmdheight=2
-" let g:echodoc#enable_at_startup = 1
-" let g:echodoc#type = 'signature'

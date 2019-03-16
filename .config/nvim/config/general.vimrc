@@ -9,7 +9,7 @@ set noshowmode
 " gutter is same color as background
 highlight clear SignColumn
 set splitbelow splitright
-" set noequalalways
+set noequalalways
 
 " Disables automatic commenting on newline:
  autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o

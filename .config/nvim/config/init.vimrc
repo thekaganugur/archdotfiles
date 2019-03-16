@@ -1,12 +1,12 @@
 call plug#begin('~/.nvim/plugged')
 " General
 Plug 'tpope/vim-vinegar'
-" Plug 'tpope/vim-surround'
+Plug 'tpope/vim-surround'
 Plug 'tpope/vim-markdown'
 Plug 'tomtom/tcomment_vim'
 Plug 'junegunn/goyo.vim'
 Plug 'airblade/vim-gitgutter'
-" Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-fugitive'
 Plug 'itchyny/lightline.vim'
 Plug '/usr/bin/fzf'
 Plug 'junegunn/fzf.vim'
@@ -27,17 +27,17 @@ Plug 'alvan/vim-closetag'
 Plug 'itchyny/vim-cursorword'
 
 " Linting, LSP, Completion
-Plug 'w0rp/ale'
+" Plug 'w0rp/ale'
 Plug 'autozimu/LanguageClient-neovim', {
     \ 'branch': 'next',
     \ 'do': 'bash install.sh',
     \ }
-Plug 'ncm2/ncm2'
-Plug 'roxma/nvim-yarp'
-Plug 'ncm2/ncm2-bufword'
-Plug 'ncm2/ncm2-path'
-Plug 'ncm2/ncm2-jedi'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'Shougo/echodoc.vim'
 
-" Plug 'Shougo/echodoc.vim'
-Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
+" Plug 'roxma/nvim-yarp'
+" Plug 'ncm2/ncm2'
+" Plug 'ncm2/ncm2-bufword'
+" Plug 'ncm2/ncm2-path'
+" Plug 'ncm2/ncm2-jedi'
 call plug#end()

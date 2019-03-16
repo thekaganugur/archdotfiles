@@ -27,8 +27,15 @@ tnoremap <leader><ESC> <C-\><C-n>
 nmap <leader>f :Goyo \| set linebreak<CR>
 
 " - LanguageClient -
-nmap <F5> :call LanguageClient_contextMenu()<CR>
+nnoremap <F5> :call LanguageClient_contextMenu()<CR>
+nmap <silent> K :call LanguageClient#textDocument_hover()<CR>
+nmap <silent> gd :call LanguageClient#textDocument_definition()<CR>
 nmap <silent> <F2> :call LanguageClient#textDocument_rename()<CR>
+
+" Use <TAB> to select the popup menu:
+inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+
 
 " - Fzf Rg -
 nmap <C-p> :Files<Cr>
@@ -46,15 +53,30 @@ imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
 " - Lightline (custom func) -
 map <F12> :call ToggleSolarizedTheme()<CR>
 
+" - Compleation popup -
+" Use <TAB> to select the popup menu:
+inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+
 " - NCM2 -
 " CTRL-C doesn't trigger the InsertLeave autocmd . map to <ESC> instead.
-inoremap <c-c> <ESC>
+" inoremap <c-c> <ESC>
 
 " When the <Enter> key is pressed while the popup menu is visible, it only
 " hides the menu. Use this mapping to close the menu and also start a new
 " line.
-inoremap <expr> <CR> (pumvisible() ? "\<c-y>\<cr>" : "\<CR>")
+" inoremap <expr> <CR> (pumvisible() ? "\<c-y>\<cr>" : "\<CR>")
 
-" Use <TAB> to select the popup menu:
-inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
-inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+" - Deoplete -
+let g:deoplete#enable_at_startup = 1
+" Use smartcase.
+call deoplete#custom#option('smart_case', v:true)
+
+" <CR>: close popup and save indent.
+inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
+function! s:my_cr_function() abort
+  return deoplete#close_popup() . "\<CR>"
+endfunction
+
+
+
