@@ -1,8 +1,8 @@
 acpi
-acpid
 acpilight
 alsa-utils
 arandr
+atool
 autoconf
 automake
 bash
@@ -12,6 +12,7 @@ bzip2
 calcurse
 clipmenu
 clipnotify
+code
 compton
 coreutils
 cryptsetup
@@ -45,7 +46,6 @@ groff
 grub
 gzip
 htop
-i3-wm
 imagemagick
 inetutils
 intel-ucode
@@ -57,6 +57,7 @@ libtool
 licenses
 linux
 linux-firmware
+linux-lts
 logrotate
 lvm2
 lxappearance
@@ -76,12 +77,11 @@ noto-fonts-emoji
 npm
 ntfs-3g
 nvidia-lts
-nvidia-settings
 openssh
-opera
-otf-font-awesome
 p7zip
 pacman
+pacman-contrib
+pandoc
 patch
 pavucontrol
 pciutils
@@ -139,6 +139,7 @@ xarchiver
 xcape
 xclip
 xdg-user-dirs
+xdotool
 xf86-input-synaptics
 xf86-video-vesa
 xfsprogs
@@ -196,5 +197,6 @@ yay
 youtube-dl
 zathura
 zathura-pdf-mupdf
+zip
 zsh
 zsh-syntax-highlighting
