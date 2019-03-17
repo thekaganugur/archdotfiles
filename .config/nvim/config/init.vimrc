@@ -27,17 +27,11 @@ Plug 'alvan/vim-closetag'
 Plug 'itchyny/vim-cursorword'
 
 " Linting, LSP, Completion
-" Plug 'w0rp/ale'
+Plug 'w0rp/ale'
 Plug 'autozimu/LanguageClient-neovim', {
     \ 'branch': 'next',
     \ 'do': 'bash install.sh',
     \ }
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'Shougo/echodoc.vim'
-
-" Plug 'roxma/nvim-yarp'
-" Plug 'ncm2/ncm2'
-" Plug 'ncm2/ncm2-bufword'
-" Plug 'ncm2/ncm2-path'
-" Plug 'ncm2/ncm2-jedi'
 call plug#end()

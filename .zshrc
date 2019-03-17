@@ -67,3 +67,5 @@ fi
 source /usr/share/fzf/completion.zsh
 source /usr/share/fzf/key-bindings.zsh
 source  /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"

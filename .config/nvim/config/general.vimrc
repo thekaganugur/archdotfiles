@@ -67,3 +67,7 @@ autocmd BufRead,BufNewFile *js,*py set signcolumn=yes
 " Terminal settings
 autocmd  TermOpen * setlocal nonumber laststatus=0
 let g:neoterm_autoscroll = 1
+
+" " Suppress the annoying 'match x of y', 'The only match' and 'Pattern not
+" " found' messages
+set shortmess+=c
