@@ -8,9 +8,9 @@ export FILE="ranger"
 export VIEWER="sxiv"
 export BROWSER="firefox"
 export SEARCHENGINE="google"
-# export SUDO_ASKPASS="$HOME/.scripts/tools/dmenupass"
 export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border'
 export FZF_DEFAULT_COMMAND='rg --files --no-ignore-vcs --hidden'
+export MYVIMRC="$HOME/.config/nvim/init.vim"
 
 alias e="$EDITOR"
 alias v="nvim"
@@ -23,12 +23,14 @@ alias ka="killall"
 alias p="sudo pacman"
 alias pkglist="pacman -Qqe > .pkglist.txt"
 alias update="yay -Syu && flatpak update"
-
-alias via="pushd ~/Codes/via-frontend && v -S"
-alias svia="pushd ~/Codes/via-frontend && v -S vimSessionStart"
-
+alias evimrc="$EDITOR $MYVIMRC"
 
 # Adding color
 alias ls='ls -hN --color=auto --group-directories-first'
 alias grep="grep --color=auto"
 alias diff="diff --color=auto"
+
+
+
+alias via="pushd ~/Codes/via-frontend && v -S"
+alias svia="pushd ~/Codes/via-frontend && v -S vimSessionStart"

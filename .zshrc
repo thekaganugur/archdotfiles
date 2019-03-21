@@ -27,7 +27,7 @@
 # ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
- COMPLETION_WAITING_DOTS="true"
+#  COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
@@ -47,7 +47,15 @@
 
 # Standard plugins can be found in ~/.oh-my-zsh/plugins/*
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-plugins=(git colored-man-pages)
+plugins=(
+vi-mode
+history-substring-search
+zsh-syntax-highlighting
+colored-man-pages
+git
+npm
+vscode
+)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -62,6 +70,9 @@ source $ZSH/oh-my-zsh.sh
 if [ "$(tty)" = "/dev/tty1" ]; then
     exec startx
 fi
+
+# Make Vi mode transitions faster (KEYTIMEOUT is in hundredths of a second)
+export KEYTIMEOUT=1
 
 
 source /usr/share/fzf/completion.zsh

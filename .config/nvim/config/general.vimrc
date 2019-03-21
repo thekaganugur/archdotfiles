@@ -16,13 +16,6 @@ set noequalalways
 " Trim whitespace onsave
 autocmd BufWritePre * %s/\s\+$//e
 
-" set number
-" augroup CursorLine
-"     au!
-"     au VimEnter,WinEnter,BufWinEnter * setlocal cursorline
-"     au WinLeave * setlocal nocursorline
-" augroup END
-
 " Search
 set ignorecase
 set smartcase
@@ -39,8 +32,9 @@ set shiftwidth=4
 autocmd BufRead,BufNewFile *.js,*.html,*.css set shiftwidth=2
 
 " Colors
-colorscheme solarized
-if strftime("%H") < 17
+set termguicolors
+colorscheme onedark
+if strftime("%H") < 19
   set background=light
 else
   set background=dark
@@ -68,6 +62,12 @@ autocmd BufRead,BufNewFile *js,*py set signcolumn=yes
 autocmd  TermOpen * setlocal nonumber laststatus=0
 let g:neoterm_autoscroll = 1
 
-" " Suppress the annoying 'match x of y', 'The only match' and 'Pattern not
-" " found' messages
+" don't give |ins-completion-menu| messages.
 set shortmess+=c
+set pumheight=12
+set complete+=k
+set complete-=t
+set completeopt=menu,preview
+
+" if hidden is not set, TextEdit might fail.
+set hidden

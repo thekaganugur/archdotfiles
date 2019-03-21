@@ -1,6 +1,13 @@
 " - Lightline -
 let g:lightline = {
       \ 'colorscheme': 'solarized',
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'cocstatus', 'readonly', 'filename', 'modified' ] ]
+      \ },
+      \ 'component_function': {
+      \   'cocstatus': 'coc#status'
+      \ },
       \ }
 " Toggle background and update lightline color scheme
 function! ToggleSolarizedTheme()
@@ -25,13 +32,6 @@ highlight def link jsObjectKey Label
 " - vim-closetag -
 let g:closetag_filetypes = 'html,js,javascript,jsx'
 
-" - Emmet -
-" let g:user_emmet_settings = {
-" \  'javascript.jsx' : {
-" \      'extends' : 'jsx',
-" \  }
-" \}
-
 " - ALE -
 let g:ale_linters = {'jsx': ['stylelint', 'eslint'], 'python': ['flake8']}
 let g:ale_linter_aliases = {'jsx': ['css', 'javascript']}
@@ -40,6 +40,7 @@ let g:ale_fixers = {
  \   'javascript.jsx': ['prettier'],
  \   'python': ['yapf'],
 \}
+
 " use .prettiercr
 let g:ale_javascript_prettier_use_local_config = 1
 let g:ale_sign_warning='.'
@@ -48,14 +49,9 @@ let g:ale_lint_on_enter=0
 let g:ale_lint_on_text_changed = 'never'
 let g:ale_fix_on_save = 1
 
-" - LanguageClient -
-let g:LanguageClient_serverCommands = {
- \ 'javascript': ['javascript-typescript-stdio'],
- \ 'javascript.jsx': ['javascript-typescript-stdio'],
- \ 'python': ['pyls'],
- \ }
-let  g:LanguageClient_useVirtualText = 0
-
-
 " Python
 let g:python_highlight_all = 1
+
+let g:markdown_fenced_languages = ['css', 'javascript', 'js=javascript', 'typescript']
+
+let g:echodoc_enable_at_startup = 1
