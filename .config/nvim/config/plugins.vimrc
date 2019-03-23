@@ -1,6 +1,6 @@
 " - Lightline -
 let g:lightline = {
-      \ 'colorscheme': 'solarized',
+      \ 'colorscheme': 'one',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
       \             [ 'cocstatus', 'readonly', 'filename', 'modified' ] ]
@@ -39,16 +39,18 @@ let g:ale_fixers = {
  \   'javascript': ['prettier'],
  \   'javascript.jsx': ['prettier'],
  \   'python': ['yapf'],
+ \   'Markdown': ['prettier'],
 \}
 
 " use .prettiercr
 let g:ale_javascript_prettier_use_local_config = 1
-let g:ale_sign_warning='.'
+let g:ale_sign_warning='·'
 let g:ale_sign_error='●'
 let g:ale_lint_on_enter=0
 let g:ale_lint_on_text_changed = 'never'
 let g:ale_fix_on_save = 1
-
+let g:ale_javascript_eslint_suppress_missing_config  = 1
+let g:ale_javascript_prettier_options = '--single-quote'
 " Python
 let g:python_highlight_all = 1
 

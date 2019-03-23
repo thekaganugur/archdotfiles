@@ -30,7 +30,7 @@ tnoremap <leader><ESC> <C-\><C-n>
 
 " -- Plugins --
 " - Lightline (custom func) -
-map <F12> :call ToggleSolarizedTheme()<CR>
+map <F7> :call ToggleSolarizedTheme()<CR>
 
 " - Goyo -
 nmap <leader>f :Goyo \| set linebreak<CR>
