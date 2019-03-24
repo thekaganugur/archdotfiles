@@ -1,4 +1,5 @@
 #! /usr/bin/bash
+
 # Sets right perspective when monitor is plugged in
 # Needed by udev rule /etc/udev/rules.d/95-hotplug-monitor
 export DISPLAY=:0

@@ -6,7 +6,6 @@
 # if a music file or pdf, it will download,
 # otherwise it opens link in browser.
 # If no url given. Opens browser. For using script as $BROWSER.
-
 browser=${BROWSER:-firefox}
 [ -z "$1" ] && { "$browser"; exit; }
 

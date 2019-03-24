@@ -1,6 +1,6 @@
 #!/bin/sh
-# Opens .sent files as sent presentations.
 
+# Opens .sent files as sent presentations.
 file=$(readlink -f "$1")
 dir=$(dirname "$file")
 base="${file%.*}"

@@ -1,7 +1,7 @@
 #!/bin/sh
+
 # opout: "open output": A general handler for opening a file's intended output.
 # I find this useful especially running from vim.
-
 basename="${1%.*}"
 
 case "$1" in
