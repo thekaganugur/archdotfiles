@@ -1,13 +1,14 @@
 {
-    "diagnostic.infoSign": "·",
-    "diagnostic.hintSign": "·",
-    "diagnostic.errorSign": "●",
-    "diagnostic.warningSign": "!",
-    "coc.source.buffer.priority": 9,
-    "coc.source.file.priority": 10,
-    "coc.source.around.priority": 9,
-    "suggest.languageSourcePriority": 1,
-	"diagnostic.displayByAle": true,
-    "suggest.echodocSupport": true,
-    "javascript.suggestionActions.enabled": false
+  "diagnostic.infoSign": "·",
+  "diagnostic.hintSign": "·",
+  "diagnostic.errorSign": "●",
+  "diagnostic.warningSign": "!",
+  "coc.source.buffer.priority": 9,
+  "coc.source.file.priority": 10,
+  "coc.source.around.priority": 9,
+  "suggest.languageSourcePriority": 1,
+  "diagnostic.displayByAle": true,
+  "suggest.echodocSupport": true,
+  "javascript.suggestionActions.enabled": false,
+  "emmet.includeLanguages": { "pug": "jade" }
 }

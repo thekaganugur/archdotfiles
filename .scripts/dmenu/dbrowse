@@ -5,7 +5,7 @@ target="$(realpath .)"
 
 while true; do
     p="$target"
-	sel="$(ls -1a "$target" |grep -v '^\.$' | dmenu -i -p "$p" -l 25 $@)"
+	sel="$(ls -1a "$target" |grep -v '^\.$' | dmenu -i -p "$p" -l 30 $@)"
 	ec=$?
 	[ "$ec" -ne 0 ] && exit $ec
 

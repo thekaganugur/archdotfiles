@@ -1,3 +1,5 @@
 [user]
 	email = kgnugur@gmail.com
 	name = Kagan
+[core]
+	excludesfile = /home/kgnugur/.gitignore_global

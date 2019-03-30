@@ -57,14 +57,12 @@ npm
 vscode
 )
 
-source $ZSH/oh-my-zsh.sh
-
 # User configuration
-
 # export MANPATH="/usr/local/man:$MANPATH"
 #
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
+
 
 # Start graphical server if tty1
 if [ "$(tty)" = "/dev/tty1" ]; then
@@ -74,9 +72,7 @@ fi
 # Make Vi mode transitions faster (KEYTIMEOUT is in hundredths of a second)
 export KEYTIMEOUT=1
 
-
+source $ZSH/oh-my-zsh.sh
 source /usr/share/fzf/completion.zsh
 source /usr/share/fzf/key-bindings.zsh
 source  /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"

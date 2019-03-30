@@ -5,10 +5,11 @@ export TERMINAL="st"
 export EDITOR="nvim"
 export READER="zathura"
 export FILE="ranger"
+export FILE_X="pcmanfm"
 export VIEWER="sxiv"
 export BROWSER="firefox"
 export SEARCHENGINE="google"
-export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border --color=bw'
+export FZF_DEFAULT_OPTS='--height 40% --border --color 16'
 export FZF_DEFAULT_COMMAND='rg --files --no-ignore-vcs --hidden'
 export MYVIMRC="$HOME/.config/nvim/init.vim"
 export NVIM_TUI_ENABLE_TRUE_COLOR='1 nvim'

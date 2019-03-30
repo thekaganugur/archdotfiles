@@ -177,7 +177,7 @@ fileviewer *.pdf pdftotext -nopgbrk %c -
 " Epub
 filextype *.epub
         \ {View in zathura}
-        \ zathura %f,
+        \ zathura %f &,
 
 " PostScript
 filextype *.ps,*.eps,*.ps.gz
@@ -241,9 +241,9 @@ fileviewer *.[1-8] man ./%c | col -b
 " Images
 filextype *.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm
         \ {View in sxiv}
-        \ sxiv %f,
+        \ sxiv %f &,
         \ {View in feh}
-        \ feh %f,
+        \ feh %f &,
         \ {View in gpicview}
         \ gpicview %c,
         \ {View in shotwell}
@@ -476,3 +476,17 @@ nnoremap <f8> :delete<cr>
 "     vifm --server-name "$VIFM_SERVER_NAME" --remote +"cd '$PWD'"
 "
 " let $VIFM_SERVER_NAME = v:servername
+
+
+
+" view contents of archive files on opening them
+filetype *.7z,*.bz2,*.cab,*.cpio,*.deb,*.gz,
+        \*.msi,*.pkg,*.rar,*.tar,*.tgz,*.xz,*.zip
+        \ als %f | less
+
+" silently extract selected archives in background
+command extract aunpack %f &>/dev/null &
+" archive the selection with :archive <filename.ext>
+command archive apack %a %f &>/dev/null &
+" map extraction command
+nnoremap ex :extract<CR>
