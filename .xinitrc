@@ -9,12 +9,13 @@ sudo chmod a+w /sys/class/backlight/intel_backlight/brightness
 # Autostart section
 redshift -l 39.979205:32.614248 &
 udiskie &
-feh --no-fehbg --bg-fill ~/.config/wall.jpg
+# feh --no-fehbg --bg-fill ~/.config/wall.png
 dunst &
 compton &
 remaps
 unclutter &
 clipmenud &
+hsetroot -solid '#002b36'
 
 
 while true; do

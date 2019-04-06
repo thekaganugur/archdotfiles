@@ -16,6 +16,7 @@ code
 compton
 coreutils
 cryptsetup
+ctags
 device-mapper
 dhcpcd
 diffutils
@@ -24,7 +25,7 @@ dunst
 e2fsprogs
 efibootmgr
 fakeroot
-feh
+fdupes
 file
 filesystem
 findutils
@@ -45,6 +46,7 @@ grep
 groff
 grub
 gzip
+hsetroot
 htop
 imagemagick
 inetutils
@@ -53,6 +55,7 @@ iproute2
 iputils
 jfsutils
 less
+libreoffice-fresh
 libtool
 licenses
 linux
@@ -61,7 +64,9 @@ linux-lts
 logrotate
 lvm2
 lxappearance
+lynx
 m4
+maim
 make
 man-db
 man-pages
@@ -78,6 +83,7 @@ npm
 ntfs-3g
 nvidia-lts
 openssh
+opera
 p7zip
 pacman
 pacman-contrib
@@ -86,6 +92,7 @@ patch
 pavucontrol
 pciutils
 pcmanfm
+pdfgrep
 perl
 perl-file-mimeinfo
 pkgconf
@@ -99,7 +106,6 @@ redshift
 reiserfsprogs
 ripgrep
 s-nail
-scrot
 sed
 shadow
 slock
@@ -122,7 +128,9 @@ texlive-pictures
 texlive-pstricks
 texlive-publishers
 texlive-science
+the_silver_searcher
 tlp
+transmission-gtk
 ttf-inconsolata
 ttf-linux-libertine
 ttf-symbola
@@ -133,6 +141,7 @@ usbutils
 util-linux
 vi
 vifm
+wget
 which
 wireless_tools
 xarchiver

@@ -94,14 +94,13 @@ let g:closetag_filetypes = 'html,js,javascript,jsx'
     \   'markdown': ['prettier'],
     \   'json': ['prettier']
     \}
-
-  let g:ale_sign_column_always = 1
   let g:ale_sign_warning='·'
   let g:ale_sign_error='●'
   let g:ale_sign_info = 'i'
   let g:ale_echo_msg_error_str = 'E'
   let g:ale_echo_msg_warning_str = 'W'
   let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
+
   let g:ale_lint_on_enter=0
   let g:ale_lint_on_text_changed = 'never'
   let g:ale_fix_on_save = 1
@@ -116,7 +115,9 @@ let g:closetag_filetypes = 'html,js,javascript,jsx'
   nmap [r :ALEPreviousWrap<CR>
 " }}
 
-" echodoc {{
-" let g:echodoc_enable_at_startup = 1
-" set cmdheight=2
+" easyalign {{
+  " Start interactive EasyAlign in visual mode (e.g. vipga)
+  xmap ga <Plug>(EasyAlign)
+  " Start interactive EasyAlign for a motion/text object (e.g. gaip)
+  nmap ga <Plug>(EasyAlign)
 " }}
