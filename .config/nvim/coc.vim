@@ -24,6 +24,12 @@
 
   " Highlight symbol under cursor on CursorHold
   autocmd CursorHold * silent call CocActionAsync('highlight')
+  if (strftime("%H") < 20) && (strftime("%H") > 5)
+    hi CocHighlightText ctermbg=15 guibg=#eee8d5
+  else
+    hi CocHighlightText ctermbg=15 guibg=#003947
+  endif
+
 
   augroup mygroup
     autocmd!
@@ -54,10 +60,10 @@
   " nmap <silent> ]c <Plug>(coc-diagnostic-next)
 
   " Remap keys for gotos
-  " nmap <silent> gd <Plug>(coc-definition)
-  " nmap <silent> gy <Plug>(coc-type-definition)
-  " nmap <silent> gi <Plug>(coc-implementation)
-  " nmap <silent> gr <Plug>(coc-references)
+  nmap <silent> gcd <Plug>(coc-definition)
+  nmap <silent> gcy <Plug>(coc-type-definition)
+  nmap <silent> gci <Plug>(coc-implementation)
+  nmap <silent> gcr <Plug>(coc-references)
 
   " Use K for show documentation in preview window
   nnoremap <silent> K :call <SID>show_documentation()<CR>

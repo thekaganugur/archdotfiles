@@ -67,7 +67,7 @@ let g:closetag_filetypes = 'html,js,javascript,jsx'
 
   autocmd! FileType fzf
   autocmd  FileType fzf set laststatus=0 noshowmode noruler
-        \| autocmd BufLeave <buffer> set laststatus=2 showmode ruler
+        \| autocmd BufLeave <buffer> set laststatus=2 ruler
 
 
   augroup netrw_buf_hidden_fix
@@ -90,26 +90,25 @@ let g:closetag_filetypes = 'html,js,javascript,jsx'
   let g:ale_fixers = {
     \   'javascript': ['prettier'],
     \   'javascript.jsx': ['prettier'],
-    \   'python': ['yapf'],
+    \   'html': ['prettier'],
     \   'markdown': ['prettier'],
-    \   'json': ['prettier']
+    \   'json': ['prettier'],
+    \   'python': ['yapf']
     \}
-  let g:ale_sign_warning='·'
   let g:ale_sign_error='●'
-  let g:ale_sign_info = 'i'
+  let g:ale_sign_warning='·'
+  let g:ale_sign_info = '·'
   let g:ale_echo_msg_error_str = 'E'
+  let g:ale_echo_msg_info_str = 'I'
   let g:ale_echo_msg_warning_str = 'W'
-  let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
+  let g:ale_echo_msg_format = '[%linter%][%severity%]: %s '
 
   let g:ale_lint_on_enter=0
   let g:ale_lint_on_text_changed = 'never'
   let g:ale_fix_on_save = 1
   let g:ale_javascript_eslint_suppress_missing_config  = 1
-  " use .prettiercr
-  let g:ale_javascript_prettier_use_local_config = 1
-  let g:ale_javascript_prettier_options = '--single-quote'
+  " let g:ale_javascript_prettier_options = '--single-quote'
   nmap <leader>d <Plug>(ale_fix)
-  nmap <F8> <Plug>(ale_fix)
   " Move between linting errors
   nmap ]r :ALENextWrap<CR>
   nmap [r :ALEPreviousWrap<CR>
@@ -120,4 +119,9 @@ let g:closetag_filetypes = 'html,js,javascript,jsx'
   xmap ga <Plug>(EasyAlign)
   " Start interactive EasyAlign for a motion/text object (e.g. gaip)
   nmap ga <Plug>(EasyAlign)
+" }}
+
+
+" easyalign {{
+  let g:matchup_matchparen_status_offscreen = 0
 " }}

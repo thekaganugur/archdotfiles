@@ -6,7 +6,7 @@
     set encoding=utf-8
     set hidden " allow buffer switch without saving
     set wildmenu
-    set clipboard=unnamedplus
+    " set clipboard=unnamedplus
     set mouse=n
     set noshowmode
     set pumheight=15
@@ -26,7 +26,7 @@
     " Set syntax highlighting for specific file types
     autocmd BufRead,BufNewFile *.Rmd,*.rmd,*.md,*.markdown,*.mdown set filetype=markdown
     autocmd BufRead,BufNewFile *.tex set filetype=tex
-    autocmd BufRead,BufNewFile .{jscs,jshint,eslint}rc set filetype=json
+    autocmd BufRead,BufNewFile .{jscs,jshint,eslint,prettier}rc set filetype=json
 
     " Terminal settings
     " autocmd  TermOpen * setlocal nonumber laststatus=0
@@ -43,12 +43,12 @@
     set expandtab
     set autoindent
     set smartindent
-    set tabstop=4
-    autocmd BufRead,BufNewFile *.js,*.html,*.css set tabstop=2
-    set softtabstop=4
-    autocmd BufRead,BufNewFile *.js,*.html,*.css set softtabstop=2
-    set shiftwidth=4
-    autocmd BufRead,BufNewFile *.js,*.html,*.css set shiftwidth=2
+    set tabstop=2
+    " autocmd BufRead,BufNewFile *.js,*.html,*.css set tabstop=2
+    set softtabstop=2
+    " autocmd BufRead,BufNewFile *.js,*.html,*.css set softtabstop=2
+    set shiftwidth=2
+    " autocmd BufRead,BufNewFile *.js,*.html,*.css set shiftwidth=2
 " }}
 
 " colors {{
@@ -58,16 +58,14 @@
       set background=dark
     endif
     set termguicolors
-
-    hi CocHighlightText ctermbg=15 guibg=#003947
-    " hi CocHighlightText ctermbg=15 guibg=#eee8d5
 " }}
 
 " complete config {{
-    set complete+=k
-    set complete-=t
-    "set completeopt=noinsert,noselect,menuone
-    set completeopt=menu,preview
+  set complete+=k
+  set complete-=t
+  set completeopt=menu,preview
+  " suppress the annoying 'match x of y', 'The only match' messages
+  set shortmess+=c
 " }}
 
 
