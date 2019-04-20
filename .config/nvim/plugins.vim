@@ -1,20 +1,24 @@
 """ vim: set sw=2 ts=2 sts=2 et tw=78 foldmarker={{,}} foldmethod=marker foldlevel=0 fen:
 
 " solarized8 {{
-    colorscheme solarized8_flat
-    let g:solarized_term_italics=1
+  colorscheme solarized8_flat
+  let g:solarized_term_italics=1
 "}}
 
 " lightline {{
   let g:lightline = {
     \ 'colorscheme': 'solarized',
+    \ 'component_function': {
+    \   'filename': 'LightlineFilename',
+    \ }
     \ }
 	let g:lightline.active = {
 	  \ 'left': [ [ 'mode', 'paste' ],
 	  \           [ 'readonly', 'filename', 'modified' ] ],
 	  \ 'right': [ [ 'lineinfo' ],
 	  \            [ 'percent' ],
-	  \            [ 'filetype' ] ] }
+	  \            [ 'filetype' ] ]
+    \}
   function! ToggleSolarizedTheme()
     let &background = ( &background == "dark"? "light" : "dark" )
     if exists("g:lightline")
@@ -22,21 +26,30 @@
       call lightline#colorscheme()
     endif
   endfunction
+
+  function! LightlineFilename()
+    let root = fnamemodify(get(b:, 'git_dir'), ':h')
+    let path = expand('%:p')
+    if path[:len(root)-1] ==# root
+      return path[len(root)+1:]
+    endif
+    return expand('%')
+  endfunction
   map <F7> :call ToggleSolarizedTheme()<CR>
 " }}
 
 " vinegar {{
-" Tree style for netrw or vinegar
-" let g:netrw_liststyle = 3
-let g:netrw_dirhistmax=0
+  " Tree style for netrw or vinegar
+  " let g:netrw_liststyle = 3
+  let g:netrw_dirhistmax=0
 " }}
 
 " vim-closetag {{
-let g:closetag_filetypes = 'html,js,javascript,jsx'
+  let g:closetag_filetypes = 'html,js,javascript,jsx'
 " }}
 
 " goyo {{
-    nmap <silent><leader>f :Goyo<CR>
+  nnoremap <silent><leader>f :Goyo<CR>
 " }}
 
 " vim-highlightedyank {{
@@ -52,13 +65,8 @@ let g:closetag_filetypes = 'html,js,javascript,jsx'
   let g:markdown_fenced_languages = ['vim', 'css', 'javascript', 'js=javascript', 'typescript']
 " }}
 
-" vim-javascript {{
-  " For getting better object/json syntax
-  " highlight def link jsObjectKey Label
-" }}
-
 " python {{
-" let g:python_highlight_all = 1
+  " let g:python_highlight_all = 1
 " }}
 
 
@@ -67,27 +75,26 @@ let g:closetag_filetypes = 'html,js,javascript,jsx'
 
   autocmd! FileType fzf
   autocmd  FileType fzf set laststatus=0 noshowmode noruler
-        \| autocmd BufLeave <buffer> set laststatus=2 ruler
-
+    \| autocmd BufLeave <buffer> set laststatus=2 ruler
 
   augroup netrw_buf_hidden_fix
     autocmd!
-
     " Set all non-netrw buffers to bufhidden=hide
     autocmd BufWinEnter *
-          \  if &ft != 'netrw'
-          \|     set bufhidden=hide
-          \| endif
-
+      \  if &ft != 'netrw'
+      \|     set bufhidden=hide
+      \| endif
   augroup end
-  nmap <silent><C-p> :Files<Cr>
-  nmap <silent><C-g> :Rg<Cr>
+
+  nnoremap <silent><C-p> :Files<Cr>
+  nnoremap <silent><C-g> :Rg<Cr>
 " }}
 
 " ale {{
   let g:ale_linters = {'jsx': ['stylelint', 'eslint'], 'python': ['flake8']}
   let g:ale_linter_aliases = {'jsx': ['css', 'javascript']}
   let g:ale_fixers = {
+    \   '*': ['remove_trailing_lines', 'trim_whitespace'],
     \   'javascript': ['prettier'],
     \   'javascript.jsx': ['prettier'],
     \   'html': ['prettier'],
@@ -121,7 +128,6 @@ let g:closetag_filetypes = 'html,js,javascript,jsx'
   nmap ga <Plug>(EasyAlign)
 " }}
 
-
-" easyalign {{
+" matchup {{
   let g:matchup_matchparen_status_offscreen = 0
 " }}

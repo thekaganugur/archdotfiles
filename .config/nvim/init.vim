@@ -23,8 +23,9 @@ Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install()}}
 Plug 'junegunn/vim-easy-align'
 Plug 'elzr/vim-json'
 Plug 'liuchengxu/vista.vim'
-
 Plug 'andymass/vim-matchup'
+
+Plug 'metakirby5/codi.vim'
 call plug#end()
 
 source $HOME/.config/nvim/general.vim

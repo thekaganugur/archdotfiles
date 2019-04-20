@@ -30,9 +30,15 @@ case "$file" in
 	*.md) pandoc "$file" --pdf-engine=xelatex -o "$base".pdf ;;
 	*.tex) textype "$file" ;;
 	*.py) python "$file" ;;
-    *.js) node "$file" ;;
 
-    # *.js) upto src && cd .. && grep -q "\"start\"" package.json
+
+# espresso
+# zenburn
+# kate
+# monochrome
+# breezedark
+# haddock
+#
 
 	# *\.ms) refer -PS -e "$file" | groff -me -ms -kejpt -T pdf > "$base".pdf ;;
     #     *\.c) cc "$file" -o "$base" && "$base" ;;
