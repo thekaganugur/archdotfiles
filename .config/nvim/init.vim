@@ -19,7 +19,7 @@ Plug 'raimondi/delimitmate'
 Plug 'alvan/vim-closetag'
 Plug 'machakann/vim-highlightedyank'
 Plug 'w0rp/ale'
-Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install()}}
+Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
 Plug 'junegunn/vim-easy-align'
 Plug 'elzr/vim-json'
 Plug 'liuchengxu/vista.vim'
