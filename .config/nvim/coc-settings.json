@@ -1,6 +1,4 @@
 {
   "diagnostic.displayByAle": true,
-  "javascript.suggestionActions.enabled": false,
-  "tsserver.log": "verbose",
-  "suggest.timeout": 4000
+  "javascript.suggestionActions.enabled": false
 }

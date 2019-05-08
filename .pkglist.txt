@@ -10,6 +10,7 @@ binutils
 bison
 bzip2
 calcurse
+chromium
 clipmenu
 clipnotify
 code
@@ -37,6 +38,7 @@ gawk
 gcc
 gcc-libs
 gettext
+gimp
 git
 glibc
 gnome-disk-utility
@@ -64,6 +66,7 @@ linux-lts
 logrotate
 lvm2
 lxappearance
+lxterminal
 lynx
 m4
 maim
@@ -71,6 +74,7 @@ make
 man-db
 man-pages
 mdadm
+mons
 mpv
 nano
 neofetch
@@ -93,6 +97,7 @@ pavucontrol
 pciutils
 pcmanfm
 pdfgrep
+peek
 perl
 perl-file-mimeinfo
 pkgconf
@@ -101,6 +106,7 @@ psmisc
 pulseaudio
 pulseaudio-alsa
 python-pip
+qpdf
 ranger
 redshift
 reiserfsprogs
@@ -108,12 +114,14 @@ ripgrep
 s-nail
 sed
 shadow
+simplescreenrecorder
 slock
 sudo
 sxiv
 sysfsutils
 systemd
 systemd-sysvcompat
+tabbed
 tar
 texinfo
 texlive-bibtexextra
@@ -130,6 +138,7 @@ texlive-publishers
 texlive-science
 the_silver_searcher
 tlp
+tmux
 transmission-gtk
 ttf-inconsolata
 ttf-linux-libertine
@@ -141,6 +150,7 @@ usbutils
 util-linux
 vi
 vifm
+vlc
 wget
 which
 wireless_tools
